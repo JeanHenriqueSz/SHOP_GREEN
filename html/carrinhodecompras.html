@@ -1,17 +1,16 @@
-User
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shop Green</title>
-    <!-- LINK CSS -->
+<!-- LINK CSS -->
     <!--<link rel="stylesheet" href="/css/style_carrinhodecompras.css"> -->
-    <!-- LINK JAVASCRIPT tt-->
+<!-- LINK JAVASCRIPT -->
 </head>
 <body>
     <header>
-            <h2>LOGO</h2>
+            <img src="/img/logo01.jpeg" height="100" width="100"></img>
             <a href="/html/cadastro.html">Home</a>
             <a href="/html/explorar.html">Explorar</a>
             <a href="/html/quemsomos.html">Quem somos</a>
@@ -21,22 +20,56 @@ User
     </header>
     <main>
         <h2>Seu carrinho</h2>
-        <div>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, architecto voluptatibus,
-            nam dolore libero dignissimos, perspiciatis optio at earum enim exercit
-            <section>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, architecto voluptatibus,
-                nam dolore libero dignissimos, perspiciatis optio at earum enim exercit
-            </section>
-
+        <div class="listaProdutosBox">
+<!--PRODUTO-->
+            <div class="produto">
+    <!--LOGO DO PRODUTO-->
+                <a href=""></a>
+    <!--NOME E DESCRÇÃO DO PRODUTO-->
+                <div class="descrição">
+                    <a>Sacola Plástica Reciclada Reforçada Branca Com 4kg Full</a>
+                    <a>As sacolas de alça camiseta possuem alta densidade, são resistentes e recicláveis. Por serem recicláveis ajudam na manutenção do meio ambiente evitando a poluição do mesmo e o acúmulo de sacolas no meio ambiente.</a>
+    <!--NOME DA LOJA-->
+                    <div class="loja">
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+    <!--QUANTIDADE-->
+            <div class="quantidade">
+    <!--SELETOR DE QUANTIDADE-->
+                <select class="">
+                    <option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option>
+                </select>
+    <!--BOTÃO PARA EXCLUIR-->
+                <button class="">
+                    <svg class="" width="14" height="18" viewBox="0 0 14 18"><path d="M12.999 4.001h-12v12a2 2 0 0 0 2.001 2h7.999a2 2 0 0 0 2-2v-12M9.499 0h-5L3.5 1.001H.999A1 1 0 0 0 0 2v1.001h14V2a1 1 0 0 0-1.001-.999H10.5L9.499 0" fill="#9B9B9B" fill-rule="evenodd"></path></svg><span class="">Excluir</span>
+                </button>
+            </div>
+    <!--TOTAL PARCIAL-->
+            <div class="valores">
+                <span>R$100,00 no PIX</span>
+                <span>ou R$55,00 no cartão</span>
+            </div>
         </div>
-
+<!--OPÇOES DE ENTREGA-->
+    <!--ENTREGA-->
+        <div class="entregaBox">
+            <span href="">Outras opções de Entrega na próxima etapa.</span>
+            <span href="">Frete para o CEP</span>
+            <form class="ZipcodeForm" method="post"><input type="tel" id="ZipcodeForm-input" class="ZipcodeForm-input" placeholder="00000-000" maxlength="9" name="zipcode" value=""><button class="buttonWithin" data-ga="{&quot;category&quot;: &quot;Carrinho&quot;, &quot;action&quot;: &quot;Calcular frete&quot;, &quot;label&quot;: &quot;OK&quot;}"><span class="buttonWithin-text">OK</span></button><a class="ZipcodeForm-link" id="findCep" href="https://buscacepinter.correios.com.br/app/endereco/index.php" target="_blank" data-ga="{&quot;category&quot;: &quot;Endereco&quot;, &quot;action&quot;: &quot;CEP&quot;, &quot;label&quot;: &quot;Nao sabe CEP&quot;}">Não sei o CEP</a></form>
+        </div>
+    <!--TOTAL-->
+        <div class="entregaBox">
+            <span href="">Frete total
+                Produto (1 item) R$ 55,00
+                Total: R$ 100,00 no Pix ou R$ 55,00 no cartão</span>
+            <span href="">Frete para o CEP</span>
+        </div>
     </main>
-
-    
-    <aside>
-
-    </aside>
-    <footer></footer>
+<!--FOOTER-->
+    <footer>
+            &copy;2024 Shop Green.
+    </footer>
 </body>
 </html>
