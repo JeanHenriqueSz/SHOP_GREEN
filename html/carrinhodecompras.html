@@ -1,73 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carrinho_de_compras</title>
+    <title>Carrinho de Compras</title>
 <!-- LINK CSS -->
-    <!--<link rel="stylesheet" href="/css/style_carrinhodecompras.css"> -->
+    <link rel="stylesheet" href="../css/style_carrinhodecompras.css">
 <!-- LINK JAVASCRIPT -->
 </head>
 <body>
-    <div class="cabecalho">
-        <a href="/html/index.html" ><img class="logo" src="../img/logo.png" alt="logo" width="200" height="200"></a>
-            <a href="/html/cadastro.html">Home</a>
-            <a href="/html/explorar.html">Explorar</a>
-            <a href="/html/quemsomos.html">Quem somos</a>
-            <a href="/html/cadastro.html">Cadastro</a>
-            <a href="/html/login.html">Login</a>
-            <a href="/html/carrinhodecompras.html">Carrinho de Compras</a>
-    </div>
-        <h2>Seu carrinho</h2>
-        <div class="listaProdutosBox">
-<!--PRODUTO-->
-            <div class="produto">
-    <!--LOGO DO PRODUTO-->
-                <img src=""></img>
-    <!--NOME E DESCRÇÃO DO PRODUTO-->
-                <div class="descrição">
+<!-- CABEÇALHO -->
+    <header class="cabecalho">
+        <a href="/SHOP_GREEN/html/index.html"><img class="logo" src="../img/logo.png" alt="logo" width="200" height="200"></a>
+        <nav class="menu">
+            <a href="/SHOP_GREEN/html/cadastro.html">Home</a>
+            <a href="/SHOP_GREEN/html/explorar.html">Explorar</a>
+            <a href="/SHOP_GREEN/html/quemsomos.html">Quem Somos</a>
+            <a href="/SHOP_GREEN/html/cadastro.html">Cadastro</a>
+            <a href="/SHOP_GREEN/html/login.html">Login</a>
+            <a href="/SHOP_GREEN/html/carrinhodecompras.html" class="active">Carrinho de Compras</a>
+        </nav>
+    </header>
+
+<!-- TÍTULO DA PÁGINA -->
+    <h2>Seu Carrinho</h2>
+
+<!-- LISTA DE PRODUTOS -->
+    <div class="listaProdutosBox">
+<!-- PRODUTO -->
+        <div class="produto">
+<!-- LOGO DO PRODUTO -->
+            <img src="" alt="Logo do Produto">
+<!-- INFORMAÇÕES DO PRODUTO -->
+            <div class="info-produto">
+<!-- DESCRIÇÃO DO PRODUTO -->
+                <div class="descricao">
                     <p>Sacola Plástica Reciclada Reforçada Branca Com 4kg Full</p>
-                    <p>As sacolas de alça camiseta possuem alta densidade, são resistentes e recicláveis. Por serem recicláveis ajudam na manutenção do meio ambiente evitando a poluição do mesmo e o acúmulo de sacolas no meio ambiente.</p>
-    <!--NOME DA LOJA-->
+                    <p>As sacolas de alça camiseta possuem alta densidade, são resistentes e recicláveis. <br>
+                    Por serem recicláveis ajudam na manutenção do meio ambiente evitando a<br>
+                    poluição do mesmo e o acúmulo de sacolas no meio ambiente.</p>
+<!-- NOME DA LOJA -->
                     <div class="loja">
-                        <h1></h1>
+                        <h1>Loja Consciente</h1>
                     </div>
                 </div>
-            </div>
-    <!--QUANTIDADE-->
-            <div class="quantidade">
-    <!--SELETOR DE QUANTIDADE-->
-                <select class="">
-                    <option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option>
-                </select>
-    <!--BOTÃO PARA EXCLUIR-->
-                <button class="">
-                    <svg class="" width="14" height="18" viewBox="0 0 14 18"><path d="M12.999 4.001h-12v12a2 2 0 0 0 2.001 2h7.999a2 2 0 0 0 2-2v-12M9.499 0h-5L3.5 1.001H.999A1 1 0 0 0 0 2v1.001h14V2a1 1 0 0 0-1.001-.999H10.5L9.499 0" fill="#9B9B9B" fill-rule="evenodd"></path></svg><span class="">Excluir</span>
-                </button>
-            </div>
-    <!--TOTAL PARCIAL-->
-            <div class="valores">
-                <p>R$100,00 no PIX</p>
-                <p>ou R$55,00 no cartão</p>
+<!-- QUANTIDADE E BOTÃO DE EXCLUIR -->
+                <div class="quantidade">
+                    <select>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+<!-- BOTÃO PARA EXCLUIR -->
+                    <div class="botao-excluir">
+                        <button>
+                            <svg width="14" height="18" viewBox="0 0 14 18"><path d="M12.999 4.001h-12v12a2 2 0 0 0 2.001 2h7.999a2 2 0 0 0 2-2v-12M9.499 0h-5L3.5 1.001H.999A1 1 0 0 0 0 2v1.001h14V2a1 1 0 0 0-1.001-.999H10.5L9.499 0" fill="#9B9B9B" fill-rule="evenodd"></path></svg>
+                            <span>Excluir</span>
+                        </button>
+                    </div>
+                </div>
+<!-- VALORES -->
+                <div class="valores">
+                    <p>R$100,00 no PIX</p>
+                    <p>ou R$55,00 no cartão</p>
+                </div>
             </div>
         </div>
-<!--OPÇOES DE ENTREGA-->
-    <!--ENTREGA-->
-        <div class="entregaBox">
-            <p>Outras opções de Entrega na próxima etapa.</p>
-            <p>Frete para o CEP</p>
-            <input type="tel" id="ZipcodeForm-input" class="ZipcodeForm-input" placeholder="00000-000" maxlength="9" name="zipcode" value=""><button class="buttonWithin" data-ga="{&quot;category&quot;: &quot;Carrinho&quot;, &quot;action&quot;: &quot;Calcular frete&quot;, &quot;label&quot;: &quot;OK&quot;}"><span class="buttonWithin-text">OK</span></button><a class="ZipcodeForm-link" id="findCep" href="https://buscacepinter.correios.com.br/app/endereco/index.php" target="_blank" data-ga="{&quot;category&quot;: &quot;Endereco&quot;, &quot;action&quot;: &quot;CEP&quot;, &quot;label&quot;: &quot;Nao sabe CEP&quot;}">Não sei o CEP</a></form>
-        </div>
-    <!--TOTAL-->
-        <div class="entregaBox">
-            <p>Frete total
-                Produto (1 item) R$ 55,00
-                Total: R$ 100,00 no Pix ou R$ 55,00 no cartão <br> <br>
-                Frete para o CEP</p>
-        </div>
-<!--FOOTER-->
+    </div>
+
+<!-- OPÇÕES DE ENTREGA -->
+    <div class="entregaBox">
+        <p>Outras opções de entrega na próxima etapa.</p>
+        <p>Frete para o CEP</p>
+        <input type="tel" id="ZipcodeForm-input" class="ZipcodeForm-input" placeholder="00000-000" maxlength="9" name="zipcode" value="">
+        <button class="buttonWithin" data-ga="{&quot;category&quot;: &quot;Carrinho&quot;, &quot;action&quot;: &quot;Calcular frete&quot;, &quot;label&quot;: &quot;OK&quot;}"><span class="buttonWithin-text">OK</span></button>
+        <a class="ZipcodeForm-link" id="findCep" href="https://buscacepinter.correios.com.br/app/endereco/index.php" target="_blank" data-ga="{&quot;category&quot;: &quot;Endereco&quot;, &quot;action&quot;: &quot;CEP&quot;, &quot;label&quot;: &quot;Nao sabe CEP&quot;}">Não sei o CEP</a>
+    </div>
+
+<!-- TOTAL -->
+    <div class="entregaBox">
+        <p>Frete total
+            Produto (1 item) R$ 55,00
+            Total: R$ 100,00 no Pix ou R$ 55,00 no cartão <br> <br>
+            Frete para o CEP</p>
+    </div>
+
+<!-- RODAPÉ -->
     <footer>
-            &copy;2024 Shop Green.
+        &copy;2024 Shop Green.
     </footer>
 </body>
 </html>

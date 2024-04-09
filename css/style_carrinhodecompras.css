@@ -1,0 +1,183 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Cores */
+:root {
+    --verde-principal: #77DD77;
+    --cinza-claro: #F5F5F5;
+    --cinza-escuro: #9B9B9B;
+}
+
+/* Tipografia */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Cabeçalho */
+.cabecalho {
+    background-color: var(--verde-principal);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 100px;
+}
+
+.cabecalho a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 16px;
+}
+
+.cabecalho a:hover {
+    color: var(--cinza-claro);
+}
+
+/* Título da página */
+h2 {
+    text-align: left;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Lista de produtos */
+.listaProdutosBox {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 0;
+    justify-content: flex-start; /* Alterado para flex-start para alinhar os itens à esquerda */
+}
+
+/* Produto */
+.produto {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px; /* Adiciona margem inferior para espaçamento entre as linhas */
+}
+
+
+/* Informações do produto */
+.info-produto {
+    flex: 1;
+}
+
+/* Logo do produto */
+.produto img {
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+}
+
+/* Descrição do produto */
+.descricao {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Distribui os elementos horizontalmente */
+}
+
+.descricao p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 5px; 
+}
+
+/* Quantidade e Valores */
+.quantidade,
+.valores {
+    width: calc(50% - 5px);
+    margin-right: 10px;
+}
+
+/* Valores */
+.valores {
+    text-align: right;
+    padding: 10px;
+}
+
+.valores p {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+/* Loja */
+.loja {
+    border-top: 1px solid var(--cinza-claro);
+    padding: 5px 0;
+}
+
+.loja h1 {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Quantidade */
+.quantidade {
+    display: flex;
+    align-items: center;
+}
+
+/* Seletor de quantidade */
+.quantidade select {
+    padding: 5px;
+    border: 1px solid var(--cinza-claro);
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+/* Botão para excluir */
+.quantidade button {
+    background-color: var(--verde-principal);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.quantidade button svg {
+    width: 14px;
+    height: 18px;
+    margin-right: 5px;
+}
+
+.loja {
+    border-top: 1px solid var(--cinza-claro);
+    padding: 5px 0;
+}
+
+.quantidade button span {
+    font-size: 14px;
+}
+
+/* Opções de entrega */
+.entregaBox {
+    background-color: var(--cinza-claro);
+    padding: 10px;
+    margin: 20px 0;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Entrega */
+.entregaBox p {
+    font-size: 14px;
+    
+}
+
+.entregaBox input {
+    padding: 5px;
+    border: 1px solid var(--cinza-claro);
+    border-radius: 5px;
+}
