@@ -71,21 +71,23 @@
     </div>
 
 <!-- OPÇÕES DE ENTREGA -->
-    <div class="entregaBox">
-        <p>Outras opções de entrega na próxima etapa.</p>
-        <p>Frete para o CEP</p>
-        <input type="tel" id="ZipcodeForm-input" class="ZipcodeForm-input" placeholder="00000-000" maxlength="9" name="zipcode" value="">
-        <button class="buttonWithin" data-ga="{&quot;category&quot;: &quot;Carrinho&quot;, &quot;action&quot;: &quot;Calcular frete&quot;, &quot;label&quot;: &quot;OK&quot;}"><span class="buttonWithin-text">OK</span></button>
-        <a class="ZipcodeForm-link" id="findCep" href="https://buscacepinter.correios.com.br/app/endereco/index.php" target="_blank" data-ga="{&quot;category&quot;: &quot;Endereco&quot;, &quot;action&quot;: &quot;CEP&quot;, &quot;label&quot;: &quot;Nao sabe CEP&quot;}">Não sei o CEP</a>
+    <div class="entregaContainer">
+        <div class="entregaBox">
+            <p>Outras opções de entrega na próxima etapa.</p>
+            <p>Frete para o CEP</p>
+            <input type="tel" id="ZipcodeForm-input" class="ZipcodeForm-input" placeholder="00000-000" maxlength="9" name="zipcode" value="">
+            <button class="buttonWithin" data-ga="{&quot;category&quot;: &quot;Carrinho&quot;, &quot;action&quot;: &quot;Calcular frete&quot;, &quot;label&quot;: &quot;OK&quot;}"><span class="buttonWithin-text">OK</span></button>
+            <a class="ZipcodeForm-link" id="findCep" href="https://buscacepinter.correios.com.br/app/endereco/index.php" target="_blank" data-ga="{&quot;category&quot;: &quot;Endereco&quot;, &quot;action&quot;: &quot;CEP&quot;, &quot;label&quot;: &quot;Nao sabe CEP&quot;}">Não sei o CEP</a>
+        </div>
+
+        <div class="entregaBoxTotal">
+            <p>Frete total
+                Produto (1 item) R$ 55,00
+                Total: R$ 100,00 no Pix ou R$ 55,00 no cartão <br> <br>
+                Frete para o CEP</p>
+        </div>
     </div>
 
-<!-- TOTAL -->
-    <div class="entregaBox">
-        <p>Frete total
-            Produto (1 item) R$ 55,00
-            Total: R$ 100,00 no Pix ou R$ 55,00 no cartão <br> <br>
-            Frete para o CEP</p>
-    </div>
 
 <!-- RODAPÉ -->
     <footer>

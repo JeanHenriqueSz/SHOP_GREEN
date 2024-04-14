@@ -1,183 +1,153 @@
-/* Reset CSS */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Cores */
-:root {
-    --verde-principal: #77DD77;
-    --cinza-claro: #F5F5F5;
-    --cinza-escuro: #9B9B9B;
-}
-
-/* Tipografia */
-body {
-    font-family: Arial, sans-serif;
-}
-
-/* Cabeçalho */
+/****************************************************** Estilos para o cabeçalho */
 .cabecalho {
-    background-color: var(--verde-principal);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 100px;
+    background-color: #2d742d; /* Cor de fundo */
+    color: #fff; /* Cor do texto */
+    padding: 20px; /* Espaçamento interno */
+    display: flex; /* Tornar o cabeçalho um flex container */
+    justify-content: space-between; /* Alinhar os elementos ao longo do eixo principal */
+    align-items: center; /* Centralizar verticalmente os elementos */
 }
 
-.cabecalho a {
-    color: white;
-    text-decoration: none;
-    margin: 0 10px;
-    font-size: 16px;
+.logo {
+    width: 100px; /* Largura do logotipo */
+    height: auto; /* Altura automática para manter a proporção */
 }
 
-.cabecalho a:hover {
-    color: var(--cinza-claro);
+.menu {
+    list-style-type: none; /* Remover os marcadores de lista */
+    display: flex; /* Tornar o menu um flex container */
 }
 
-/* Título da página */
+.menu a {
+    text-decoration: none; /* Remover sublinhado dos links */
+    color: #fff; /* Cor do texto dos links */
+    margin-right: 20px; /* Espaçamento entre os itens do menu */
+}
+
+.menu a.active {
+    font-weight: bold; /* Destacar o link ativo */
+}
+
+
+
+/****************************************************** Estilos para o título da página */
 h2 {
-    text-align: left;
-    margin-top: 20px;
-    margin-left: 20px;
-    font-size: 24px;
-    font-weight: bold;
+    margin-top: 20px; /* Espaçamento superior */
+    color: #333; /* Cor do texto */
+    font-size: 24px; /* Tamanho da fonte */
+    font-weight: bold; /* Peso da fonte */
 }
 
-/* Lista de produtos */
+
+
+
+/****************************************************** Estilos para a lista de produtos */
 .listaProdutosBox {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 20px 0;
-    justify-content: flex-start; /* Alterado para flex-start para alinhar os itens à esquerda */
+    display: flex; /* Tornar a lista de produtos um flex container */
+    flex-wrap: wrap; /* Permitir que os produtos quebrem para uma nova linha */
+    justify-content: space-between; /* Distribuir os produtos igualmente ao longo do eixo principal */
 }
 
-/* Produto */
+/* Estilos para cada item de produto */
 .produto {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 20px; /* Adiciona margem inferior para espaçamento entre as linhas */
+    background-color: #fff; /* Cor de fundo */
+    border-radius: 5px; /* Borda arredondada */
+    padding: 20px; /* Espaçamento interno */
+    margin-bottom: 20px; /* Espaçamento inferior */
+    width: 100%; /* Largura do item de produto */
+    display: flex; /* Tornar o item de produto um flex container */
+    flex-wrap: wrap; /* Permitir que os elementos quebrem para uma nova linha */
 }
 
-
-/* Informações do produto */
-.info-produto {
-    flex: 1;
-}
-
-/* Logo do produto */
 .produto img {
-    width: 100px;
-    height: 100px;
-    margin-right: 10px;
+    max-width: 200px; /* Largura máxima da imagem */
+    height: auto; /* Altura automática */
 }
 
-/* Descrição do produto */
+.info-produto {
+    margin-left: 20px; /* Espaçamento à esquerda */
+    display: flex; /* Tornar o contêiner um flex container */
+    justify-content: space-between; /* Distribuir os elementos horizontalmente */
+}
+
 .descricao {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: space-between; /* Distribui os elementos horizontalmente */
+    flex-grow: 1; /* Permitir que a descrição ocupe todo o espaço disponível */
 }
 
-.descricao p {
-    font-size: 14px;
-    line-height: 1.5;
-    margin-bottom: 5px; 
-}
-
-/* Quantidade e Valores */
-.quantidade,
 .valores {
-    width: calc(50% - 5px);
-    margin-right: 10px;
-}
-
-/* Valores */
-.valores {
-    text-align: right;
-    padding: 10px;
-}
-
-.valores p {
-    font-size: 16px;
-    margin-bottom: 5px;
-}
-
-/* Loja */
-.loja {
-    border-top: 1px solid var(--cinza-claro);
-    padding: 5px 0;
+    text-align: right; /* Alinhar o texto à direita */
+    flex-shrink: 0; /* Evitar que este elemento encolha */
+    margin-left: 20px; /* Espaçamento à esquerda */
 }
 
 .loja h1 {
-    font-size: 16px;
-    font-weight: bold;
-    margin: 0;
+    font-size: 18px; /* Tamanho da fonte */
+    color: #666; /* Cor do texto */
+    margin-top: 10px; /* Espaçamento superior */
 }
 
-/* Quantidade */
 .quantidade {
+    display: flex; /* Tornar o contêiner um flex container */
+    align-items: center; /* Centralizar verticalmente os itens */
+    justify-content: flex-end; /* Alinhar os itens à direita */
+    margin-top: 10px; /* Espaçamento superior */
+}
+
+.botao-excluir button {
+    background-color: #ff0000; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    border: none; /* Remover a borda */
+    padding: 5px 10px; /* Espaçamento interno */
+    border-radius: 3px; /* Borda arredondada */
+    cursor: pointer; /* Cursor ao passar por cima */
+    margin-left: 10px; /* Espaçamento à esquerda */
+}
+
+
+/****************************************************** Estilos para a opçoes de entraga */
+
+.entregaContainer {
     display: flex;
-    align-items: center;
-}
-
-/* Seletor de quantidade */
-.quantidade select {
-    padding: 5px;
-    border: 1px solid var(--cinza-claro);
-    border-radius: 5px;
-    margin-right: 10px;
-}
-
-/* Botão para excluir */
-.quantidade button {
-    background-color: var(--verde-principal);
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 5px 10px;
-    cursor: pointer;
-}
-
-.quantidade button svg {
-    width: 14px;
-    height: 18px;
-    margin-right: 5px;
-}
-
-.loja {
-    border-top: 1px solid var(--cinza-claro);
-    padding: 5px 0;
-}
-
-.quantidade button span {
-    font-size: 14px;
-}
-
-/* Opções de entrega */
-.entregaBox {
-    background-color: var(--cinza-claro);
-    padding: 10px;
-    margin: 20px 0;
-    border-radius: 5px;
-    display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
+    flex-wrap: wrap;
 }
 
-/* Entrega */
-.entregaBox p {
-    font-size: 14px;
-    
+.entregaBox,
+.entregaBoxTotal {
+    width: calc(50% - 10px); /* 50% do espaço disponível com uma margem de 10px entre elas */
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-sizing: border-box; /* inclui padding e borda no tamanho total */
+    margin-bottom: 20px;
 }
 
-.entregaBox input {
-    padding: 5px;
-    border: 1px solid var(--cinza-claro);
-    border-radius: 5px;
+.ZipcodeForm-input,
+.buttonWithin {
+    margin-top: 10px; /* Adiciona espaço entre o formulário e o botão */
 }
+
+.ZipcodeForm-link {
+    margin-top: 10px; /* Adiciona espaço entre o formulário e o link */
+}
+
+/* Limpar margens e preenchimento padrão */
+p {
+    margin: 0;
+    padding: 0;
+}
+
+/****************************************************** Estilos para a rodapé */
+
+footer {
+    background-color: #f0f0f0; /* Cor de fundo */
+    color: #333; /* Cor do texto */
+    padding: 20px; /* Espaçamento interno */
+    text-align: center; /* Alinhamento do texto */
+    font-size: 14px; /* Tamanho da fonte */
+    position: fixed; /* Fixar o rodapé na parte inferior da página */
+    left: 0; /* Alinhar à esquerda */
+    bottom: 0; /* Alinhar na parte inferior */
+    width: 100%; /* Largura total */
+}
+
+
