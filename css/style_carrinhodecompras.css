@@ -1,15 +1,32 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+
+/* Estilos de tipografia */
+body {
+    font-family: 'Poppins', sans-serif; /* Define a família de fontes */
+    font-size: 16px; /* Tamanho da fonte padrão */
+    line-height: 1.6; /* Espaçamento entre linhas */
+}
+
+
 /****************************************************** Estilos para o cabeçalho */
 .cabecalho {
-    background-color: #2d742d; /* Cor de fundo */
-    color: #fff; /* Cor do texto */
-    padding: 20px; /* Espaçamento interno */
+    background-color: #9acf93; /* Cor de fundo */
+    color: #ffffff; /* Cor do texto */
+    padding: 0px 20px; /* Espaçamento interno */
     display: flex; /* Tornar o cabeçalho um flex container */
     justify-content: space-between; /* Alinhar os elementos ao longo do eixo principal */
     align-items: center; /* Centralizar verticalmente os elementos */
+    top: 0; /* Posicionar o cabeçalho no topo da página */
+    width: 100%; /* Largura total */
+    z-index: 999; /* Garantir que o cabeçalho esteja acima de outros elementos */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adicionar sombra sutil */
 }
 
+
 .logo {
-    width: 100px; /* Largura do logotipo */
+    width: 120px; /* Largura do logotipo */
     height: auto; /* Altura automática para manter a proporção */
 }
 
@@ -33,25 +50,20 @@
 /****************************************************** Estilos para o título da página */
 h2 {
     margin-top: 20px; /* Espaçamento superior */
-    color: #333; /* Cor do texto */
+    color: #000000; /* Cor do texto */
     font-size: 24px; /* Tamanho da fonte */
     font-weight: bold; /* Peso da fonte */
+    background-color: #ffffff63; /* Cor de fundo */
 }
 
 
 
 
 /****************************************************** Estilos para a lista de produtos */
-.listaProdutosBox {
-    display: flex; /* Tornar a lista de produtos um flex container */
-    flex-wrap: wrap; /* Permitir que os produtos quebrem para uma nova linha */
-    justify-content: space-between; /* Distribuir os produtos igualmente ao longo do eixo principal */
-}
 
-/* Estilos para cada item de produto */
+
 .produto {
-    background-color: #fff; /* Cor de fundo */
-    border-radius: 5px; /* Borda arredondada */
+    background-color: #ffffff63; /* Cor de fundo */
     padding: 20px; /* Espaçamento interno */
     margin-bottom: 20px; /* Espaçamento inferior */
     width: 100%; /* Largura do item de produto */
@@ -59,43 +71,51 @@ h2 {
     flex-wrap: wrap; /* Permitir que os elementos quebrem para uma nova linha */
 }
 
+.produto > * {
+    flex: 1; /* Faz com que todos os elementos dentro de .produto tenham a mesma largura */
+}
+
 .produto img {
-    max-width: 200px; /* Largura máxima da imagem */
-    height: auto; /* Altura automática */
+    max-width: 80px; /* Largura máxima da imagem */
+    height: 80px; /* Altura automática */
+    align-items: center; /* Centralizar verticalmente os itens */
 }
 
 .info-produto {
     margin-left: 20px; /* Espaçamento à esquerda */
     display: flex; /* Tornar o contêiner um flex container */
-    justify-content: space-between; /* Distribuir os elementos horizontalmente */
+    align-items: center; /* Centralizar verticalmente os itens */
+    flex: 1; /* Ocupar todo o espaço disponível */
 }
 
 .descricao {
-    flex-grow: 1; /* Permitir que a descrição ocupe todo o espaço disponível */
+    flex: 1; /* Faz a descrição ocupar todo o espaço disponível */
 }
 
-.valores {
+.valoresContainer {
     text-align: right; /* Alinhar o texto à direita */
     flex-shrink: 0; /* Evitar que este elemento encolha */
-    margin-left: 20px; /* Espaçamento à esquerda */
+    margin-left: 100px;
 }
 
 .loja h1 {
     font-size: 18px; /* Tamanho da fonte */
-    color: #666; /* Cor do texto */
+    color: #000000; /* Cor do texto */
     margin-top: 10px; /* Espaçamento superior */
 }
 
 .quantidade {
     display: flex; /* Tornar o contêiner um flex container */
     align-items: center; /* Centralizar verticalmente os itens */
-    justify-content: flex-end; /* Alinhar os itens à direita */
+    justify-content: center; /* Alinhar os itens ao centro */
     margin-top: 10px; /* Espaçamento superior */
+    margin-left: 100px; /* Espaçamento à esquerda */
+    flex-direction: column; /* Centralizar verticalmente os itens */
 }
 
 .botao-excluir button {
-    background-color: #ff0000; /* Cor de fundo do botão */
-    color: #fff; /* Cor do texto do botão */
+    background-color: none; /* Cor de fundo do botão */
+    color: #050505; /* Cor do texto do botão */
     border: none; /* Remover a borda */
     padding: 5px 10px; /* Espaçamento interno */
     border-radius: 3px; /* Borda arredondada */
@@ -104,43 +124,83 @@ h2 {
 }
 
 
-/****************************************************** Estilos para a opçoes de entraga */
 
+/****************************************************** Estilos para as opções de entrega */
+
+/* Estilizando o contêiner principal */
 .entregaContainer {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    display: flex; /* Utilizando flexbox para organizar os elementos */
+    justify-content: space-between; /* Alinha os itens ao longo do eixo principal (horizontal) com espaço entre eles */
+    background-color: #9acf9370; /* Cor de fundo */
+    padding: 20px; /* Espaçamento interno */
+    margin-bottom: 20px; /* Margem inferior */
 }
 
-.entregaBox,
-.entregaBoxTotal {
-    width: calc(50% - 10px); /* 50% do espaço disponível com uma margem de 10px entre elas */
-    border: 1px solid #ccc;
-    padding: 10px;
-    box-sizing: border-box; /* inclui padding e borda no tamanho total */
-    margin-bottom: 20px;
+/* Estilizando a caixa de entrega */
+.entregaBox {
+    flex: 1; /* Faz com que a caixa ocupe todo o espaço disponível */
+    border: 1px solid #ccc; /* Borda */
+    padding: 20px; /* Espaçamento interno */
+    margin-right: 10px; /* Espaçamento à direita */
 }
 
-.ZipcodeForm-input,
+/* Estilizando os parágrafos dentro da caixa de entrega */
+.entregaBox p {
+    margin-bottom: 10px; /* Espaçamento inferior */
+}
+
+/* Estilizando o campo de entrada do CEP */
+.ZipcodeForm-input {
+    width: 150px; /* Largura */
+    padding: 5px; /* Espaçamento interno */
+    font-size: 16px; /* Tamanho da fonte */
+    border: 1px solid #ccc; /* Borda */
+    border-radius: 4px; /* Bordas arredondadas */
+}
+
+/* Estilizando o botão de OK */
 .buttonWithin {
-    margin-top: 10px; /* Adiciona espaço entre o formulário e o botão */
+    background-color: #007bff; /* Cor de fundo */
+    color: #fff; /* Cor do texto */
+    border: none; /* Removendo borda */
+    padding: 8px 16px; /* Espaçamento interno */
+    cursor: pointer; /* Cursor ao passar por cima */
+    border-radius: 4px; /* Bordas arredondadas */
+    font-size: 16px; /* Tamanho da fonte */
 }
 
+/* Estilizando o botão de OK ao passar o mouse por cima */
+.buttonWithin:hover {
+    background-color: #0056b3; /* Cor de fundo ao passar o mouse */
+}
+
+/* Estilizando o link "Não sei o CEP" */
 .ZipcodeForm-link {
-    margin-top: 10px; /* Adiciona espaço entre o formulário e o link */
+    color: #007bff; /* Cor do texto */
+    text-decoration: none; /* Removendo sublinhado */
+    margin-left: 10px; /* Espaçamento à esquerda */
 }
 
-/* Limpar margens e preenchimento padrão */
-p {
-    margin: 0;
-    padding: 0;
+/* Estilizando o link "Não sei o CEP" ao passar o mouse por cima */
+.ZipcodeForm-link:hover {
+    text-decoration: underline; /* Adicionando sublinhado ao passar o mouse */
 }
+
+/* Estilizando a caixa de entrega total */
+.entregaBoxTotal {
+    flex: 1; /* Faz com que a caixa ocupe todo o espaço disponível */
+    background-color: #fff; /* Cor de fundo */
+    border: 1px solid #ccc; /* Borda */
+    padding: 20px; /* Espaçamento interno */
+    margin-left: 10px; /* Espaçamento à esquerda */
+}
+
 
 /****************************************************** Estilos para a rodapé */
 
 footer {
     background-color: #f0f0f0; /* Cor de fundo */
-    color: #333; /* Cor do texto */
+    color: #2d742d; /* Cor do texto */
     padding: 20px; /* Espaçamento interno */
     text-align: center; /* Alinhamento do texto */
     font-size: 14px; /* Tamanho da fonte */
