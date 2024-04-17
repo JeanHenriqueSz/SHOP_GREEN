@@ -1,4 +1,5 @@
 /******************************************** Header */
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 
 *{
     margin: 0; /* Reseta as margens */
@@ -7,17 +8,33 @@
 
 body {
     background-color: white; /* Define a cor de fundo do corpo */
-    font-family: Georgia, 'Times New Roman', Times, serif; /* Define a fonte padrão */
+    font-family: "Varela Round", sans-serif;
+    height: auto;
 }
 
-header {
-    background-color: rgb(52, 107, 50); /* Define a cor de fundo do cabeçalho */
-    color: aliceblue; /* Define a cor do texto no cabeçalho */
-    font-size: 24px; /* Define o tamanho da fonte */
-    padding: 20px 0; /* Define o preenchimento superior e inferior */
-    display: flex; /* Usa um layout flexível para alinhar os itens centralmente */
-    justify-content: center; /* Centraliza o conteúdo horizontalmente */
-    text-align: center; /* Centraliza o texto */
+.cabecalho {
+    background-color: #53a149; /* Cor de fundo */
+    color: #ffffff; /* Cor do texto */
+    padding: 0px 20px; /* Espaçamento interno */
+    display: flex; /* Tornar o cabeçalho um flex container */
+    justify-content: space-between; /* Alinhar os elementos ao longo do eixo principal */
+    align-items: center; /* Centralizar verticalmente os elementos */
+    top: 0; /* Posicionar o cabeçalho no topo da página */
+    width: 100%; /* Largura total */
+    z-index: 999; /* Garantir que o cabeçalho esteja acima de outros elementos */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adicionar sombra sutil */
+}
+
+/* Estilo para os links no header */
+header a {
+    text-decoration: none; /* Remove o sublinhado */
+    color: black;
+    margin-right: 30px;
+}
+
+header img {
+    height: 110px; /* Define a altura da imagem */
+    width: 110px; /* Define a largura da imagem */
 }
 
 main {
@@ -211,3 +228,21 @@ aside > button {
 aside > button:hover {
     background: #3bc55b; /* Muda a cor de fundo ao passar o mouse */
 }
+
+
+.copy {
+    background-color: #f0f0f0; /* Cor de fundo */
+    color: #2d742d; /* Cor do texto */
+    padding: 20px; /* Espaçamento interno */
+    text-align: center; /* Alinhamento do texto */
+    font-size: 14px; /* Tamanho da fonte */
+    left: 0; /* Alinhar à esquerda */
+    bottom: 0; /* Alinhar na parte inferior */
+    width: 100%; /* Largura total */
+    position: absolute;
+}
+
+
+
+
+
