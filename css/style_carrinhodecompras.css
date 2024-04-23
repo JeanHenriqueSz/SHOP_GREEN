@@ -1,0 +1,248 @@
+/******************************************** Header */
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+*{
+    margin: 0; /* Reseta as margens */
+    padding: 0; /* Reseta os preenchimentos */
+}
+
+body {
+    background-color: white; /* Define a cor de fundo do corpo */
+    font-family: "Varela Round", sans-serif;
+    height: auto;
+}
+
+.cabecalho {
+    background-color: #53a149; /* Cor de fundo */
+    color: #ffffff; /* Cor do texto */
+    padding: 0px 20px; /* Espaçamento interno */
+    display: flex; /* Tornar o cabeçalho um flex container */
+    justify-content: space-between; /* Alinhar os elementos ao longo do eixo principal */
+    align-items: center; /* Centralizar verticalmente os elementos */
+    top: 0; /* Posicionar o cabeçalho no topo da página */
+    width: 100%; /* Largura total */
+    z-index: 999; /* Garantir que o cabeçalho esteja acima de outros elementos */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adicionar sombra sutil */
+}
+
+/* Estilo para os links no header */
+header a {
+    text-decoration: none; /* Remove o sublinhado */
+    color: black;
+    margin-right: 30px;
+}
+
+header img {
+    height: 110px; /* Define a altura da imagem */
+    width: 110px; /* Define a largura da imagem */
+}
+
+main {
+    background-color: white; /* Define a cor de fundo do conteúdo principal */
+    padding:0 30px; /* Define o preenchimento horizontal */
+}
+
+.tituloCarrinho {
+    font-size: 40px; /* Define o tamanho da fonte */
+    padding: 20px 0; /* Define o preenchimento superior e inferior */
+    text-align: left; /* Alinha o texto à esquerda */
+}
+
+.conteiner{
+    display: flex; /* Ativa o modelo flexível */
+    justify-content: space-between; /* Distribui o espaço disponível entre os elementos */
+}
+
+section{
+    flex: 1; /* Define a flexibilidade para preencher o espaço disponível */
+}
+
+.info-produto{
+    display: flex; /* Usa um layout flexível para os detalhes do produto */
+}
+
+.logoProduto{
+    width: 80px; /* Define a largura da imagem do produto */
+    height: 100px; /* Define a altura da imagem do produto */
+    border-radius: 6px; /* Adiciona cantos arredondados à imagem */
+}
+
+/******************************************** TABELA E LISTA  */
+
+table {
+    width: 100%; /* Define a largura da tabela como 100% */
+    border-collapse: collapse; /* Remove a separação entre as células */
+}
+table thead tr {
+    border-bottom: 3px solid #eee; /* Adiciona uma borda inferior ao cabeçalho da tabela */
+}
+table thead tr th {
+    text-align: left; /* Alinha o texto à esquerda no cabeçalho da tabela */
+    padding-bottom: 10px; /* Define o preenchimento inferior */
+    text-transform: uppercase; /* Transforma o texto em maiúsculas */
+    color: #666; /* Define a cor do texto */
+}
+  
+
+table tbody tr {
+    border-bottom: 3px solid #eee; /* Adiciona uma borda inferior às linhas da tabela */
+}
+table tbody tr td {
+    padding: 30px 0; /* Define o preenchimento superior e inferior das células da tabela */
+}
+  
+.produto {
+    display: flex; /* Usa um layout flexível para os itens do produto */
+    align-items: center; /* Alinha verticalmente os itens */
+}
+  
+.produto img {
+    border-radius: 6px; /* Adiciona cantos arredondados à imagem do produto */
+    width: 80px; /* Define a largura da imagem */
+    height: 100px; /* Define a altura da imagem */
+
+}
+  
+.produto .info {
+      margin-left: 20px; /* Adiciona uma margem à esquerda para separar a imagem e as informações do produto */
+}
+  
+.produto .info .nome {
+    font-size: 20px; /* Define o tamanho da fonte do nome do produto */
+    margin-bottom: 10px; /* Define o espaçamento inferior */
+}
+  
+.produto .info .loja {
+    color: #666; /* Define a cor do texto */
+}
+  
+.quantidade {
+    background: #eee; /* Define a cor de fundo */
+    display: inline-flex; /* Usa um layout flexível para os elementos de quantidade */
+    padding: 0 0; /* Define o preenchimento */
+    justify-content: space-around; /* Distribui o espaço entre os elementos */
+    align-items: center; /* Alinha verticalmente os itens */
+    min-width: 60px; /* Define a largura mínima */
+    border-radius: 20px; /* Adiciona cantos arredondados */
+    overflow: hidden; /* Esconde o conteúdo extra */
+    height: 30px; /* Define a altura */
+}
+  
+.quantidade span {
+    margin: 0 10px; /* Define a margem entre os elementos */
+}
+  
+.quantidade button {
+    background: transparent; /* Define o fundo transparente */
+    border: 0; /* Remove a borda */
+    padding: 0 10px; /* Define o preenchimento */
+    font-size: 20px; /* Define o tamanho da fonte */
+    height: 100%; /* Define a altura */
+}
+  
+.quantidade button:hover {
+    background: #ddd; /* Muda a cor de fundo ao passar o mouse */
+}
+  
+.remover {
+    background: #eee; /* Define a cor de fundo */
+    border: 0; /* Remove a borda */
+    width: 30px; /* Define a largura */
+    height: 30px; /* Define a altura */
+    border-radius: 100%; /* Adiciona cantos arredondados */
+    display: flex; /* Usa um layout flexível */
+    align-items: center; /* Alinha verticalmente os itens */
+    justify-content: center; /* Alinha horizontalmente os itens */
+    font-size: 20px; /* Define o tamanho da fonte */
+}
+  
+.remover:hover {
+    background: #ddd; /* Muda a cor de fundo ao passar o mouse */
+}
+
+/******************************************** ****** BOX LATERAL */
+
+aside {
+    margin-left: 30px; /* Define a margem à esquerda */
+    
+}
+  
+aside .box {
+    margin-bottom: 15px; /* Define a margem inferior */
+    border: 1px solid #ccc; /* Adiciona uma borda */
+    background: #eee; /* Define a cor de fundo */
+    color: #222; /* Define a cor do texto */
+}
+  
+aside .box header {
+    padding: 15px 20px; /* Define o preenchimento */
+    font-size: 18px; /* Define o tamanho da fonte */
+    border-bottom: 1px solid #ccc; /* Adiciona uma borda inferior ao cabeçalho */
+}
+  
+aside .box .info {
+    padding: 20px; /* Define o preenchimento */
+    font-size: 16px; /* Define o tamanho da fonte */
+}
+  
+aside .box .info > div {
+    display: flex; /* Usa um layout flexível */
+    justify-content: space-between; /* Distribui o espaço entre os elementos */
+    margin-bottom: 10px; /* Define a margem inferior */
+    color: #555; /* Define a cor do texto */
+}
+  
+aside .box .info > div:last-child {
+    margin: 0; /* Remove a margem do último elemento */
+}
+  
+aside .box .info button {
+    color: #28a745; /* Define a cor do texto */
+    background: transparent; /* Define o fundo transparente */
+    border: 0; /* Remove a borda */
+    display: flex; /* Usa um layout flexível */
+    align-items: center; /* Alinha verticalmente os itens */
+    font-size: 16px; /* Define o tamanho da fonte */
+}
+  
+aside .box footer {
+    padding: 15px 20px; /* Define o preenchimento */
+    background: #ddd; /* Define a cor de fundo */
+    font-size: 18px; /* Define o tamanho da fonte */
+    display: flex; /* Usa um layout flexível */
+    justify-content: space-between; /* Distribui o espaço entre os elementos */
+}
+  
+aside > button {
+    border: 0; /* Remove a borda */
+    padding: 15px 0; /* Define o preenchimento */
+    color: white; /* Define a cor do texto */
+    background: #28a745; /* Define a cor de fundo */
+    display: block; /* Define como bloco */
+    width: 100%; /* Define a largura */
+    text-transform: uppercase; /* Transforma o texto em maiúsculas */
+    letter-spacing: 1px; /* Define o espaçamento entre as letras */
+    font-size: 16px; /* Define o tamanho da fonte */
+}
+  
+aside > button:hover {
+    background: #3bc55b; /* Muda a cor de fundo ao passar o mouse */
+}
+
+
+.copy {
+    background-color: #f0f0f0; /* Cor de fundo */
+    color: #2d742d; /* Cor do texto */
+    padding: 20px; /* Espaçamento interno */
+    text-align: center; /* Alinhamento do texto */
+    font-size: 14px; /* Tamanho da fonte */
+    left: 0; /* Alinhar à esquerda */
+    bottom: 0; /* Alinhar na parte inferior */
+    width: 100%; /* Largura total */
+    position: absolute;
+}
+
+
+
+
+

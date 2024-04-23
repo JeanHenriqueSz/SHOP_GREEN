@@ -1,0 +1,125 @@
+body {
+    background-color: #BBC49F;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #BBC49F;
+}
+
+.header .links a {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: #1B5E1F; /* Altera a cor do texto para #1B5E1F */
+    background-color: #BBC49F; /* Mantém a cor de fundo do cabeçalho */
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.header .links a:hover {
+    background-color: #176a24;
+}
+
+.logo img {
+    border-radius: 50%; /* Transforma a imagem em um círculo */
+}
+
+.login-button {
+    width: 175px; /* Reduz o tamanho da imagem em 25% */
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #BBC49F;
+    padding: 10px 20px;
+}
+
+.links a {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: #000; /* Cor da letra preta */
+    background-color: #1B5E1F; /* Cor verde */
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.links a:hover {
+    background-color: #176a24; /* Cor de fundo ao passar o mouse */
+    color: #fff; /* Cor da letra branca ao passar o mouse */
+}
+
+
+.search-bar {
+    /* Estilo da barra de busca */
+}
+
+.text-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    flex-wrap: wrap; /* Permite que os elementos sejam empilhados quando não couberem na largura da página */
+}
+
+.left-text, .right-text {
+    flex: 0 0 calc(50% - 20px); /* Define a largura de cada texto para ocupar metade da largura da página com espaço para margem */
+    max-width: calc(50% - 20px); /* Define a largura máxima de cada texto para 50% da largura da página com espaço para margem */
+    text-align: justify; /* Justifica o texto */
+    min-height: 200px; /* Define uma altura mínima para os textos */
+}
+
+.titles {
+    text-align: left; /* Alinha os títulos à esquerda */
+    margin-bottom: 20px; /* Adiciona margem inferior */
+}
+
+.titles h2, .titles h1 {
+    color: #48250D; /* Define a cor do texto */
+    margin-left: 20px; /* Adiciona uma margem à esquerda */
+}
+
+.left-text p, .right-text p {
+    color: #48250D; /* Define a cor do texto */
+}
+
+.titles h1 {
+    margin-top: 0; /* Remove completamente a margem superior do título */
+}
+
+.titles > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px; /* Adiciona espaçamento entre os títulos e os textos */
+}
+
+.footer {
+    display: flex;
+    justify-content: left; /* Centraliza horizontalmente os itens do rodapé */
+    padding: 20px;
+}
+
+.footer button {
+    border-radius: 20px;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.footer button:first-child {
+    color: white;
+    background-color: #48250D;
+}
+
+.footer button:last-child {
+    color: #48250D;
+    background-color: #BBC49F;
+}
