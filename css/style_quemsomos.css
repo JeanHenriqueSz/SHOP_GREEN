@@ -1,44 +1,15 @@
 body {
-    background-color: #BBC49F;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
+    background-image: url(../img/backgroundQuemSomos.png);/* Imagem de fundo */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%; font-family: Arial, sans-serif;
 
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: #BBC49F;
-}
-
-.header .links a {
-    display: inline-block;
-    padding: 10px 20px;
-    border-radius: 20px;
-    color: #1B5E1F; /* Altera a cor do texto para #1B5E1F */
-    background-color: #BBC49F; /* Mantém a cor de fundo do cabeçalho */
-    text-decoration: none;
-    margin-right: 10px;
-}
-
-.header .links a:hover {
-    background-color: #176a24;
 }
 .logo {  
     width: 60%;   
     height: 70%;
     margin-left: 20%;
 } 
-.grid-container {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    padding: 10px;
-  }
-  .grid-item {
-    padding: 20px;
-  }
 .explorar {  
     width: 10%;  
     height: 10%;
@@ -48,6 +19,14 @@ body {
     margin-left: 50%;
     top: 60%;
 }
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+  }
+  .grid-item {
+    padding: 20px;
+  }
 /* Estilo dos botões */
 .button {
     /* Estilo de apresentação do botão */
@@ -73,7 +52,6 @@ body {
     box-shadow: 0 5px #411f1f; /* Altera a sombra ao pressionar */
     transform: translateY(4px); /* Translação ao pressionar */
 }
-
 .navigation {
     display: flex;
     justify-content: space-between;
@@ -81,63 +59,23 @@ body {
     background-color: #BBC49F;
     padding: 10px 20px;
 }
-.text-container {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    flex-wrap: wrap; /* Permite que os elementos sejam empilhados quando não couberem na largura da página */
+.comecar{
+   /* Estilo de apresentação do botão */
+   padding: 10px 30px; /* Preenchimento do botão */
+   font-size: 18px; /* Tamanho da fonte */
+   /* Estilo de fundo e borda do botão */
+   background-color:#411f1f; /* Cor de fundo */
+   border: none; /* Remove a borda */
+   border-radius: 15px; /* Raio de borda arredondada */
+   box-shadow: 0 9px #A2C03D; /* Sombra do botão */
+   position: absolute;
+   top: 72%;  
+   width: 15%;  
+   left: 9%;
+   font-family: Arial, Helvetica, sans-serif;
+   position: absolute; 
+   color: #E8EEF4;
+   margin-top: 7%;
+   max-width: 100%;
 }
 
-.left-text, .right-text {
-    flex: 0 0 calc(50% - 20px); /* Define a largura de cada texto para ocupar metade da largura da página com espaço para margem */
-    max-width: calc(50% - 20px); /* Define a largura máxima de cada texto para 50% da largura da página com espaço para margem */
-    text-align: justify; /* Justifica o texto */
-    min-height: 200px; /* Define uma altura mínima para os textos */
-}
-
-.titles {
-    text-align: left; /* Alinha os títulos à esquerda */
-    margin-bottom: 20px; /* Adiciona margem inferior */
-}
-
-.titles h2, .titles h1 {
-    color: #48250D; /* Define a cor do texto */
-    margin-left: 20px; /* Adiciona uma margem à esquerda */
-}
-
-.left-text p, .right-text p {
-    color: #48250D; /* Define a cor do texto */
-}
-
-.titles h1 {
-    margin-top: 0; /* Remove completamente a margem superior do título */
-}
-
-.titles > div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 20px; /* Adiciona espaçamento entre os títulos e os textos */
-}
-
-.footer {
-    display: flex;
-    justify-content: left; /* Centraliza horizontalmente os itens do rodapé */
-    padding: 20px;
-}
-
-.footer button {
-    border-radius: 20px;
-    padding: 10px;
-    margin-right: 10px;
-}
-
-.footer button:first-child {
-    color: white;
-    background-color: #48250D;
-}
-
-.footer button:last-child {
-    color: #48250D;
-    background-color: #BBC49F;
-}

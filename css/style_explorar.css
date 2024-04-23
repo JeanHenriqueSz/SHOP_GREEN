@@ -26,12 +26,14 @@ body {
     margin-left: 50%;
     top: 60%;
 }
+
 .buy{
     position: absolute;
     top: 60%;
     width: 30%;  
     left: 100%;
     transform: translate(-50%, -50%);
+    max-width: 100%;
 }
 .sell{ 
     position: absolute;
@@ -39,6 +41,7 @@ body {
     width: 30%;  
     left: 15%;
     transform: translate(-50%, -50%);
+    max-width: 100%;
 }
 /* Estilo dos botões */
 .button {
@@ -67,9 +70,6 @@ body {
 }
 /* Estilo do botão de comprar */
 .buy-button {
-      top: 73%;
-      width: 15%;  
-      left: 93%;
       /* Estilo de apresentação do botão */
       padding: 10px 20px; /* Preenchimento do botão */
       font-size: 18px; /* Tamanho da fonte */
@@ -84,6 +84,10 @@ body {
       position: absolute;
       font-family: Arial, Helvetica, sans-serif;
       color: #411f1f;
+      top: 77%;
+      width: 15%;  
+      margin-left: 92%;
+      max-width: 100%;
     }
     .buy-button:hover{
         background-color: #1F8D16; /* Altera a cor de fundo ao passar o mouse */
@@ -97,7 +101,7 @@ body {
 /* Estilo do botão de vender */
 .sell-button {
     /* Estilo de apresentação do botão */
-    padding: 10px 30px; /* Preenchimento do botão */
+    padding: 10px 20px; /* Preenchimento do botão */
     font-size: 18px; /* Tamanho da fonte */
     cursor: pointer; /* Cursor do mouse ao passar sobre o botão */
     outline: none; /* Remove o contorno ao focar no botão */
@@ -107,12 +111,13 @@ body {
     border-radius: 15px; /* Raio de borda arredondada */
     box-shadow: 0 9px #A2C03D; /* Sombra do botão */
     position: absolute;
-    top: 72%;  
+    top: 75%;  
     width: 15%;  
-    left: 8%;
+    left: 5%;
     font-family: Arial, Helvetica, sans-serif;
     position: absolute; 
     color: #411f1f;
+    max-width: 100%;
 }
 .sell-button:hover{
     background-color: #1F8D16; /* Altera a cor de fundo ao passar o mouse */
@@ -122,6 +127,7 @@ body {
     box-shadow: 0 5px #411f1f; /* Altera a sombra ao pressionar */
     transform: translateY(4px); /* Translação ao pressionar */
 }
+
 .footer {
     position: fixed;
     left: 0;

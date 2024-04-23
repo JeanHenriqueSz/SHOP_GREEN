@@ -3,7 +3,14 @@ body {
     font-family: Arial, sans-serif;
     background-color: #BBC49F;
 }
-
+.logo{
+    position: absolute; /* Posição absoluta para que a imagem possa ser posicionada */
+    top: 0px; /* Distância do topo */
+    left: 0px; /* Distância da esquerda */
+    width: 350px; /* Largura da imagem */
+    height: auto; /* Altura automática para manter a proporção */
+   
+}
 .container {
     width: 629px;
     height: 672px;

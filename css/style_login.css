@@ -9,11 +9,11 @@ h1 {
 }
 .logo{
     position: absolute; /* Posição absoluta para que a imagem possa ser posicionada */
-    top: 30px; /* Distância do topo */
-    left: 10px; /* Distância da esquerda */
-    width: 200px; /* Largura da imagem */
+    top: 0px; /* Distância do topo */
+    left: 0px; /* Distância da esquerda */
+    width: 350px; /* Largura da imagem */
     height: auto; /* Altura automática para manter a proporção */
-    border-radius: 60%;
+   
 }
 .container {
     width: 500px;
