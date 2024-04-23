@@ -26,13 +26,52 @@ body {
 .header .links a:hover {
     background-color: #176a24;
 }
-
-.logo img {
-    border-radius: 50%; /* Transforma a imagem em um círculo */
+.logo {  
+    width: 60%;   
+    height: 70%;
+    margin-left: 20%;
+} 
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+  }
+  .grid-item {
+    padding: 20px;
+  }
+.explorar {  
+    width: 10%;  
+    height: 10%;
+} 
+.login{
+    margin-top: 50%;
+    margin-left: 50%;
+    top: 60%;
 }
-
-.login-button {
-    width: 175px; /* Reduz o tamanho da imagem em 25% */
+/* Estilo dos botões */
+.button {
+    /* Estilo de apresentação do botão */
+    padding: 10px 20px; /* Preenchimento do botão */
+    font-size: 18px; /* Tamanho da fonte */
+    cursor: pointer; /* Cursor do mouse ao passar sobre o botão */
+    outline: none; /* Remove o contorno ao focar no botão */
+    /* Estilo de fundo e borda do botão */
+    background-color:#1F8D16; /* Cor de fundo */
+    border: none; /* Remove a borda */
+    border-radius: 15px; /* Raio de borda arredondada */
+    box-shadow: 0 9px #411f1f; /* Sombra do botão */
+    align-self: center;
+    margin-left: 10%;
+    margin-top: 10%;
+    color: #411f1f;
+}
+.button:hover {
+    background-color: #E8EEF4; /* Altera a cor de fundo ao passar o mouse */
+}
+.button:active {
+    background-color: #E8EEF4; /* Altera a cor de fundo ao pressionar */
+    box-shadow: 0 5px #411f1f; /* Altera a sombra ao pressionar */
+    transform: translateY(4px); /* Translação ao pressionar */
 }
 
 .navigation {
@@ -42,27 +81,6 @@ body {
     background-color: #BBC49F;
     padding: 10px 20px;
 }
-
-.links a {
-    display: inline-block;
-    padding: 10px 20px;
-    border-radius: 20px;
-    color: #000; /* Cor da letra preta */
-    background-color: #1B5E1F; /* Cor verde */
-    text-decoration: none;
-    margin-right: 10px;
-}
-
-.links a:hover {
-    background-color: #176a24; /* Cor de fundo ao passar o mouse */
-    color: #fff; /* Cor da letra branca ao passar o mouse */
-}
-
-
-.search-bar {
-    /* Estilo da barra de busca */
-}
-
 .text-container {
     display: flex;
     justify-content: space-between;

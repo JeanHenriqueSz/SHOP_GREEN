@@ -1,4 +1,9 @@
-/* Estilo do logotipo */
+body {
+    background-image: url("../img/backgroundExplorar.png") ; /* Imagem de fundo */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
 .logo {  
     width: 60%;   
     height: 70%;
@@ -6,9 +11,8 @@
 } 
 .grid-container {
     display: grid;
-    row-gap: 10px;
     grid-template-columns: auto auto auto;
-    padding: 70px;
+    padding: 10px;
   }
   .grid-item {
     padding: 20px;
@@ -16,18 +20,11 @@
 .explorar {  
     width: 10%;  
     height: 10%;
-    margin-left: 95%;
-    top: 0%;
 } 
 .login{
- margin-left: 98%;
- top: 20%;
-}
-body {
-    background-image: url("../img/backgroundExplorar.png") ; /* Imagem de fundo */
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100% 100%;
+    margin-top: 50%;
+    margin-left: 50%;
+    top: 60%;
 }
 .buy{
     position: absolute;
@@ -38,7 +35,7 @@ body {
 }
 .sell{ 
     position: absolute;
-    top: 60%;  
+    top: 58%;  
     width: 30%;  
     left: 15%;
     transform: translate(-50%, -50%);
@@ -70,10 +67,9 @@ body {
 }
 /* Estilo do botão de comprar */
 .buy-button {
-      top: 70%;
-      left: 20%;
+      top: 73%;
       width: 15%;  
-      left: 90%;
+      left: 93%;
       /* Estilo de apresentação do botão */
       padding: 10px 20px; /* Preenchimento do botão */
       font-size: 18px; /* Tamanho da fonte */
@@ -111,9 +107,9 @@ body {
     border-radius: 15px; /* Raio de borda arredondada */
     box-shadow: 0 9px #A2C03D; /* Sombra do botão */
     position: absolute;
-    top: 68%;  
+    top: 72%;  
     width: 15%;  
-    left: 10%;
+    left: 8%;
     font-family: Arial, Helvetica, sans-serif;
     position: absolute; 
     color: #411f1f;
