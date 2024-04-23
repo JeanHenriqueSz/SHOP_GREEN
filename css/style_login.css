@@ -1,0 +1,109 @@
+body {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background-color: #BBC49F;;
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    text-align: center;
+}
+.logo{
+    position: absolute; /* Posição absoluta para que a imagem possa ser posicionada */
+    top: 30px; /* Distância do topo */
+    left: 10px; /* Distância da esquerda */
+    width: 200px; /* Largura da imagem */
+    height: auto; /* Altura automática para manter a proporção */
+    border-radius: 60%;
+}
+.container {
+    width: 500px;
+    height: 500px;
+    margin: 142px auto;
+    padding: 30px;
+    background-color: #176a24;
+    border-radius: 38px;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+}
+.logo-facebook img{
+    margin-right: 10px;
+    width: 20px; 
+    height: auto; 
+    position: relative;
+    left: 200px;
+}
+
+.logo-google img{
+    margin-right: 10px;
+    width: 20px; 
+    height: auto; 
+    position: relative;
+    left: 160px;
+}
+
+#google{
+    position: relative;
+    left: 160px;
+    bottom: 2px;
+    font-size: 15px; 
+
+}
+
+#face{
+    position: relative;
+    left: 295px;
+    bottom: 21.5px;
+    font-size: 15px;
+}
+
+#text-face{
+    position: relative;
+    left: 300px;
+    bottom: 26px;
+}
+#text-face span{
+    font-size: 15px;
+}  
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type="submit"] {
+    width: 100%;
+    background-color: #618463;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background-image: linear-gradient(to right,rgb(0, 92, 197), rgb(90, 20, 220));
+    width: 100%;
+    border: none;
+    padding: 15px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+p {
+    text-align: center;
+    margin-top: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: #1e90ff;
+}
+
+a:hover {
+    text-decoration: underline;
+}
