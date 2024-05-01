@@ -3,8 +3,10 @@ document.addEventListener("DOMContentLoaded", function() {
     const quantidadeText = document.querySelector('.quantidade-text');
     const botaoMinus = document.querySelector('.botaoMenos');
     const botaoPlus = document.querySelector('.botaoMais');
+    const removerButton = document.querySelector('.remover');
     const subtotalSpan = document.querySelector('.sub-total');
     const totalSpan = document.querySelector('.total-text');
+    const totalProdutoSpan = document.querySelector('.total-produto-text');
     const finalizarCompraButton = document.querySelector('.finalizar-compra');
   
     // Adicionando evento de clique para o botão de subtração
@@ -18,8 +20,8 @@ document.addEventListener("DOMContentLoaded", function() {
       // Atualizando a quantidade de texto
       quantidadeText.textContent = quantidade;
   
-      // Calculando e atualizando o subtotal e o total
-      calcularTotal();
+      // Calculando e atualizando o subtotal, total e total do produto
+      calcularTotais();
     });
   
     // Adicionando evento de clique para o botão de adição
@@ -33,25 +35,43 @@ document.addEventListener("DOMContentLoaded", function() {
       // Atualizando a quantidade de texto
       quantidadeText.textContent = quantidade;
   
-      // Calculando e atualizando o subtotal e o total
-      calcularTotal();
+      // Calculando e atualizando o subtotal, total e total do produto
+      calcularTotais();
     });
   
-    // Função para calcular o subtotal e o total
-    function calcularTotal() {
-      // Obtendo o preço do produto do texto
-      const preco = parseFloat(document.querySelector('td:nth-child(2)').textContent.replace('R$ ', ''));
+    // Adicionando evento de clique para o botão de remover
+    removerButton.addEventListener('click', function() {
+      // Removendo o elemento pai (a linha da tabela)
+      removerButton.closest('tr').remove();
   
-      // Obtendo a quantidade do texto
-      const quantidade = parseInt(quantidadeText.textContent);
+      // Recalculando os totais
+      calcularTotais();
+    });
   
-      // Calculando o subtotal multiplicando o preço pela quantidade
-      const subtotal = preco * quantidade;
+    // Função para calcular o subtotal, total e total do produto
+    function calcularTotais() {
+      let totalGeral = 0;
+  
+      // Iterando sobre todas as linhas da tabela
+      document.querySelectorAll('tbody tr').forEach((row) => {
+        const preco = parseFloat(row.querySelector('td:nth-child(2)').textContent.replace('R$ ', '').replace(',', '.'));
+        const quantidade = parseInt(row.querySelector('.quantidade-text').textContent);
+        const subtotal = preco * quantidade;
+  
+        // Atualizando o total do produto
+        row.querySelector('.total-produto-text').textContent = `R$ ${subtotal.toFixed(2)}`;
+  
+        // Adicionando ao total geral
+        totalGeral += subtotal;
+      });
   
       // Atualizando o subtotal e o total com o formato de moeda
-      subtotalSpan.textContent = `R$ ${subtotal.toFixed(2)}`;
-      totalSpan.textContent = `R$ ${subtotal.toFixed(2)}`;
+      subtotalSpan.textContent = `R$ ${totalGeral.toFixed(2)}`;
+      totalSpan.textContent = `R$ ${totalGeral.toFixed(2)}`;
     }
+  
+    // Calcular subtotal, total e total do produto quando a página carregar
+    calcularTotais();
   
     // Adicionando evento de clique para o botão "Finalizar Compra"
     if(finalizarCompraButton) {
