@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carrinho de Compras</title>
     <link rel="stylesheet" href="../css/style_carrinhodecompras.css">
+    <script src="../script/scriptCarrinhoDeCompras.js" defer></script>
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
-    <!---->
 </head>
 <body>
     <header class="cabecalho">
@@ -48,12 +48,12 @@
                             <td>R$ 100</td>
                             <td>
                               <div class="quantidade">
-                                <button><i class="bx bx-minus"></i></button>
-                                <span>2</span>
-                                <button><i class="bx bx-plus"></i></button>
+                                <button class="botaoMenos"><i class="bx bx-minus"></i></button>
+                                <span class="quantidade-text">2</span>
+                                <button class="botaoMais"><i class="bx bx-plus"></i></button>
                               </div>
                             </td>
-                            <td>R$ 200</td>
+                            <td class="total-produto-text">R$ 200</td>
                             <td>
                               <button class="remover"><i class="bx bx-x"></i></button>
                             </td>
@@ -67,7 +67,7 @@
                 <div class="box">
                   <header>Resumo da compra</header>
                   <div class="info">
-                    <div><span>Sub-total</span><span>R$ 200,00</span></div>
+                    <div><span>Sub-total</span><span class="sub-total">R$ 200,00</span></div>
                     <div><span>Frete</span><span>Gratuito</span></div>
                     <div>
                       <button>
@@ -78,10 +78,10 @@
                   </div>
                     <footer>
                         <span>Total</span>
-                        <span>R$ 200,00</span>
+                        <span class="total-text">R$ 200,00</span>
                     </footer>
                 </div>
-                <button>Finalizar Compra</button>
+                <button class=" finalizar-compra">Finalizar Compra</button>
               </aside>
         </div>
     </main>
