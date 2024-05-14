@@ -1,8 +1,15 @@
 body {
-    background-image: url("../img/backgroundExplorar.png") ; /* Imagem de fundo */
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100% 100%;
+    background-color: #FFFFFF;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, sans-serif;
+    font-size: 1.125rem;
+    margin: 0;
+    padding: 0;
+}
+.sell{
+  margin-left: 0.1%;
+}
+.buy{
+  margin-left: 82.5%;
 }
 .logo {  
     width: 60%;   
@@ -26,23 +33,6 @@ body {
     margin-left: 50%;
     top: 60%;
 }
-
-.buy{
-    position: absolute;
-    top: 60%;
-    width: 30%;  
-    left: 100%;
-    transform: translate(-50%, -50%);
-    max-width: 100%;
-}
-.sell{ 
-    position: absolute;
-    top: 58%;  
-    width: 30%;  
-    left: 15%;
-    transform: translate(-50%, -50%);
-    max-width: 100%;
-}
 /* Estilo dos botões */
 .button {
     /* Estilo de apresentação do botão */
@@ -56,8 +46,6 @@ body {
     border-radius: 15px; /* Raio de borda arredondada */
     box-shadow: 0 9px #411f1f; /* Sombra do botão */
     align-self: center;
-    margin-left: 10%;
-    margin-top: 10%;
     color: #411f1f;
 }
 .button:hover {
@@ -84,10 +72,7 @@ body {
       position: absolute;
       font-family: Arial, Helvetica, sans-serif;
       color: #411f1f;
-      top: 77%;
-      width: 15%;  
-      margin-left: 92%;
-      max-width: 100%;
+
     }
     .buy-button:hover{
         background-color: #1F8D16; /* Altera a cor de fundo ao passar o mouse */
@@ -100,24 +85,22 @@ body {
     }
 /* Estilo do botão de vender */
 .sell-button {
-    /* Estilo de apresentação do botão */
-    padding: 10px 20px; /* Preenchimento do botão */
-    font-size: 18px; /* Tamanho da fonte */
-    cursor: pointer; /* Cursor do mouse ao passar sobre o botão */
-    outline: none; /* Remove o contorno ao focar no botão */
-    /* Estilo de fundo e borda do botão */
-    background-color:#E8EEF4; /* Cor de fundo */
-    border: none; /* Remove a borda */
-    border-radius: 15px; /* Raio de borda arredondada */
-    box-shadow: 0 9px #A2C03D; /* Sombra do botão */
-    position: absolute;
-    top: 75%;  
-    width: 15%;  
-    left: 5%;
-    font-family: Arial, Helvetica, sans-serif;
-    position: absolute; 
-    color: #411f1f;
-    max-width: 100%;
+     /* Estilo de apresentação do botão */
+     padding: 10px 20px; /* Preenchimento do botão */
+     font-size: 18px; /* Tamanho da fonte */
+     cursor: pointer; /* Cursor do mouse ao passar sobre o botão */
+     outline: none; /* Remove o contorno ao focar no botão */
+     /* Estilo de fundo e borda do botão */
+     background-color: #E8EEF4; /* Cor de fundo */
+     border: none; /* Remove a borda */
+     border-radius: 15px; /* Raio de borda arredondada */
+     box-shadow: 0 9px #A2C03D; /* Sombra do botão */
+     align-self: left; /* Alinha o botão à esquerda */
+     position: absolute;
+     font-family: Arial, Helvetica, sans-serif;
+     color: #411f1f;
+     margin-left: 60%;
+    
 }
 .sell-button:hover{
     background-color: #1F8D16; /* Altera a cor de fundo ao passar o mouse */
@@ -137,3 +120,523 @@ body {
     color: white;
     text-align: center;
  }
+ body {
+    background-color: #FFFFFF;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, sans-serif;
+    font-size: 1.125rem;
+    margin: 0;
+    padding: 0;
+}
+
+.custom-search-input {
+  background-color: white; /* Define o fundo do campo de busca como branco */
+  border: 1px solid #ced4da; /* Adiciona uma borda ao redor do campo */
+  border-radius: .25rem; /* Adiciona borda arredondada */
+  padding: .375rem .75rem; /* Adiciona preenchimento interno ao campo */
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out; /* Adiciona uma transição suave */
+  color: white; /* Define a cor do texto dentro do campo de busca */
+}
+
+.custom-search-input:focus {
+  color: black; /* Mantém o texto preto quando o campo de busca está em foco */
+  background-color: white !important;
+}
+
+.carousel-item-svg rect {
+  fill: #105730; /* Define a cor de fundo do carrossel como verde claro */
+}
+
+/* Botões personalizados com fundo verde claro e texto branco */
+.btn.btn-lg.btn-primary[href="#"]:not(.dropdown-toggle) {
+  background-color: #407c5b;
+  border-color: #407c5b;
+  color: #FFFFFF;
+}
+
+/* Estilos de hover para os botões personalizados */
+.btn.btn-lg.btn-primary[href="#"]:not(.dropdown-toggle):hover {
+  background-color: #AADBC3;
+  border-color: #AADBC3;
+  color: #FFFFFF;
+}
+
+
+.nav-link.px-2.link-body-emphasis {
+  color: green !important;
+}
+
+footer.py-3 .nav-link.text-body-secondary {
+  color: gray !important;
+}
+
+footer.py-3 .text-body-secondary {
+  color: gray !important;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #BBC49F;
+    padding: 10px 20px;
+}
+
+.navigation .nav-link {
+  color: green;
+}
+
+.text-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    flex-wrap: wrap; /* Permite que os elementos sejam empilhados quando não couberem na largura da página */
+}
+
+.left-text, .right-text {
+    flex: 0 0 calc(50% - 20px); /* Define a largura de cada texto para ocupar metade da largura da página com espaço para margem */
+    max-width: calc(50% - 20px); /* Define a largura máxima de cada texto para 50% da largura da página com espaço para margem */
+    text-align: justify; /* Justifica o texto */
+    min-height: 200px; /* Define uma altura mínima para os textos */
+}
+
+.titles {
+    text-align: left; /* Alinha os títulos à esquerda */
+    margin-bottom: 20px; /* Adiciona margem inferior */
+}
+
+.titles h2, .titles h1 {
+    color: #48250D; /* Define a cor do texto */
+    margin-left: 20px; /* Adiciona uma margem à esquerda */
+}
+
+.left-text p, .right-text p {
+    color: #48250D; /* Define a cor do texto */
+}
+
+.titles h1 {
+    margin-top: 0; /* Remove completamente a margem superior do título */
+}
+
+.titles > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px; /* Adiciona espaçamento entre os títulos e os textos */
+}
+
+.footer {
+    display: flex;
+    justify-content: left; /* Centraliza horizontalmente os itens do rodapé */
+    padding: 20px;
+}
+
+.footer button {
+    border-radius: 20px;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.footer button:first-child {
+    color: white;
+    background-color: #48250D;
+}
+
+.footer button:last-child {
+    color: #48250D;
+    background-color: #BBC49F;
+}
+
+body {
+   
+  }
+  
+  
+  /* CUSTOMIZE THE CAROUSEL
+  -------------------------------------------------- */
+  
+  /* Carousel base class */
+  .carousel {
+    margin-bottom: 4rem;
+  }
+  .carousel-caption {
+    bottom: 0; /* Altere de 3rem para 0 para alinhar o texto no centro vertical */
+    top: 0; /* Adicione a propriedade top com o valor 0 para que o texto fique centralizado verticalmente */
+    display: flex; /* Adicione display flex para permitir o alinhamento vertical */
+    align-items: center; /* Alinhe verticalmente o conteúdo do .carousel-caption */
+    justify-content: center; /* Centralize horizontalmente o conteúdo do .carousel-caption */
+    flex-direction: column; /* Adicione flex-direction: column para permitir que o texto seja empilhado verticalmente */
+    padding: 1rem; /* Adicione um preenchimento ao .carousel-caption */
+}
+  
+  /* Declare heights because of positioning of img element */
+  .carousel-item {
+    height: 32rem;
+  }
+  
+  
+  /* MARKETING CONTENT
+  -------------------------------------------------- */
+  
+  /* Center align the text within the three columns below the carousel */
+  .marketing .col-lg-4 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  /* rtl:begin:ignore */
+  .marketing .col-lg-4 p {
+    margin-right: .75rem;
+    margin-left: .75rem;
+  }
+
+  
+  .featurette-divider {
+    margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+  }
+  
+  /* Thin out the marketing headings */
+  /* rtl:begin:remove */
+  .featurette-heading {
+    letter-spacing: -.05rem;
+  }
+  
+  /* RESPONSIVE CSS
+  -------------------------------------------------- */
+  
+  @media (min-width: 40em) {
+    /* Bump up size of carousel content */
+    .carousel-caption p {
+      margin-bottom: 1.25rem;
+      font-size: 1.25rem;
+      line-height: 1.4;
+    }
+  
+    .featurette-heading {
+      font-size: 50px;
+    }
+  }
+  
+  @media (min-width: 62em) {
+    .featurette-heading {
+      margin-top: 7rem;
+    }
+  }
+  
+  .form-control-dark {
+    border-color: var(--bs-gray);
+  }
+  .form-control-dark:focus {
+    border-color: #fff;
+    box-shadow: 0 0 0 .25rem rgba(255, 255, 255, .25);
+  }
+  
+  .dropdown-toggle:not(:focus) {
+    outline: 0;
+  }
+  .bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  }
+  
+.custom-search-input {
+  background-color: white; /* Define o fundo do campo de busca como branco */
+  border: 1px solid #ced4da; /* Adiciona uma borda ao redor do campo */
+  border-radius: .25rem; /* Adiciona borda arredondada */
+  padding: .375rem .75rem; /* Adiciona preenchimento interno ao campo */
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out; /* Adiciona uma transição suave */
+  color: white; /* Define a cor do texto dentro do campo de busca */
+}
+
+.custom-search-input:focus {
+  color: black; /* Mantém o texto preto quando o campo de busca está em foco */
+  background-color: white !important;
+}
+
+.carousel-item-svg rect {
+  fill: #105730; /* Define a cor de fundo do carrossel como verde claro */
+}
+
+/* Botões personalizados com fundo verde claro e texto branco */
+.btn.btn-lg.btn-primary[href="#"]:not(.dropdown-toggle) {
+  background-color: #407c5b;
+  border-color: #407c5b;
+  color: #FFFFFF;
+}
+
+/* Estilos de hover para os botões personalizados */
+.btn.btn-lg.btn-primary[href="#"]:not(.dropdown-toggle):hover {
+  background-color: #AADBC3;
+  border-color: #AADBC3;
+  color: #FFFFFF;
+}
+
+
+.nav-link.px-2.link-body-emphasis {
+  color: green !important;
+}
+
+footer.py-3 .nav-link.text-body-secondary {
+  color: gray !important;
+}
+
+footer.py-3 .text-body-secondary {
+  color: gray !important;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #BBC49F;
+    padding: 10px 20px;
+}
+
+.navigation .nav-link {
+  color: green;
+}
+
+.text-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    flex-wrap: wrap; /* Permite que os elementos sejam empilhados quando não couberem na largura da página */
+}
+
+.left-text, .right-text {
+    flex: 0 0 calc(50% - 20px); /* Define a largura de cada texto para ocupar metade da largura da página com espaço para margem */
+    max-width: calc(50% - 20px); /* Define a largura máxima de cada texto para 50% da largura da página com espaço para margem */
+    text-align: justify; /* Justifica o texto */
+    min-height: 200px; /* Define uma altura mínima para os textos */
+}
+
+.titles {
+    text-align: left; /* Alinha os títulos à esquerda */
+    margin-bottom: 20px; /* Adiciona margem inferior */
+}
+
+.titles h2, .titles h1 {
+    color: #48250D; /* Define a cor do texto */
+    margin-left: 20px; /* Adiciona uma margem à esquerda */
+}
+
+.left-text p, .right-text p {
+    color: #48250D; /* Define a cor do texto */
+}
+
+.titles h1 {
+    margin-top: 0; /* Remove completamente a margem superior do título */
+}
+
+.titles > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px; /* Adiciona espaçamento entre os títulos e os textos */
+}
+
+.footer {
+    display: flex;
+    justify-content: left; /* Centraliza horizontalmente os itens do rodapé */
+    padding: 20px;
+}
+
+.footer button {
+    border-radius: 20px;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.footer button:first-child {
+    color: white;
+    background-color: #48250D;
+}
+
+.footer button:last-child {
+    color: #48250D;
+    background-color: #BBC49F;
+}
+
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    color: rgb(var(--bs-tertiary-color-rgb));
+  }
+  
+  
+  /* CUSTOMIZE THE CAROUSEL
+  -------------------------------------------------- */
+  
+  /* Carousel base class */
+  .carousel {
+    margin-bottom: 4rem;
+  }
+  .carousel-caption {
+    bottom: 0; /* Altere de 3rem para 0 para alinhar o texto no centro vertical */
+    top: 0; /* Adicione a propriedade top com o valor 0 para que o texto fique centralizado verticalmente */
+    display: flex; /* Adicione display flex para permitir o alinhamento vertical */
+    align-items: center; /* Alinhe verticalmente o conteúdo do .carousel-caption */
+    justify-content: center; /* Centralize horizontalmente o conteúdo do .carousel-caption */
+    flex-direction: column; /* Adicione flex-direction: column para permitir que o texto seja empilhado verticalmente */
+    padding: 1rem; /* Adicione um preenchimento ao .carousel-caption */
+}
+  
+  /* Declare heights because of positioning of img element */
+  .carousel-item {
+    height: 32rem;
+  }
+  
+  
+  /* MARKETING CONTENT
+  -------------------------------------------------- */
+  
+  /* Center align the text within the three columns below the carousel */
+  .marketing .col-lg-4 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  /* rtl:begin:ignore */
+  .marketing .col-lg-4 p {
+    margin-right: .75rem;
+    margin-left: .75rem;
+  }
+  /* rtl:end:ignore */
+  
+  
+  /* Featurettes
+  ------------------------- */
+  
+  .featurette-divider {
+    margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+  }
+  
+  /* Thin out the marketing headings */
+  /* rtl:begin:remove */
+  .featurette-heading {
+    letter-spacing: -.05rem;
+  }
+  
+  /* rtl:end:remove */
+  
+  /* RESPONSIVE CSS
+  -------------------------------------------------- */
+  
+  @media (min-width: 40em) {
+    /* Bump up size of carousel content */
+    .carousel-caption p {
+      margin-bottom: 1.25rem;
+      font-size: 1.25rem;
+      line-height: 1.4;
+    }
+  
+    .featurette-heading {
+      font-size: 50px;
+    }
+  }
+  
+  @media (min-width: 62em) {
+    .featurette-heading {
+      margin-top: 7rem;
+    }
+  }
+  
+  .form-control-dark {
+    border-color: var(--bs-gray);
+  }
+  .form-control-dark:focus {
+    border-color: #fff;
+    box-shadow: 0 0 0 .25rem rgba(255, 255, 255, .25);
+  }
+  
+  .dropdown-toggle:not(:focus) {
+    outline: 0;
+  }
+
+  .bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  }
+
+  .b-example-divider {
+    width: 100%;
+    height: 3rem;
+    background-color: rgba(0, 0, 0, .1);
+    border: solid rgba(0, 0, 0, .15);
+    border-width: 1px 0;
+    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+  }
+
+  .b-example-vr {
+    flex-shrink: 0;
+    width: 1.5rem;
+    height: 100vh;
+  }
+
+  .bi {
+    vertical-align: -.125em;
+    fill: currentColor;
+  }
+
+  .nav-scroller {
+    position: relative;
+    z-index: 2;
+    height: 2.75rem;
+    overflow-y: hidden;
+  }
+
+  .nav-scroller .nav {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-bottom: 1rem;
+    margin-top: -1px;
+    overflow-x: auto;
+    text-align: center;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .btn-bd-primary {
+    --bd-violet-bg: #712cf9;
+    --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+    --bs-btn-font-weight: 600;
+    --bs-btn-color: var(--bs-white);
+    --bs-btn-bg: var(--bd-violet-bg);
+    --bs-btn-border-color: var(--bd-violet-bg);
+    --bs-btn-hover-color: var(--bs-white);
+    --bs-btn-hover-bg: #6528e0;
+    --bs-btn-hover-border-color: #6528e0;
+    --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+    --bs-btn-active-color: var(--bs-btn-hover-color);
+    --bs-btn-active-bg: #5a23c8;
+    --bs-btn-active-border-color: #5a23c8;
+  }
+
+  .bd-mode-toggle {
+    z-index: 1500;
+  }
+
+  .bd-mode-toggle .dropdown-menu .active .bi {
+    display: block !important;
+  }
+

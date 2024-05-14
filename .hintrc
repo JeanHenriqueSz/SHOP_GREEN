@@ -9,5 +9,15 @@
         "image-alt": "off"
       }
     ]
-  }
+  },
+  "browserslist": [
+    "defaults",
+    "not ie 11",
+    "not and_chr <= 123",
+    "not chrome <= 123",
+    "not edge <= 123",
+    "not firefox <= 124",
+    "not safari <= 17.4",
+    "not samsung <= 24"
+  ]
 }
