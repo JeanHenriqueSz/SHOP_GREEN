@@ -6,10 +6,10 @@ body {
     padding: 0;
 }
 .sell{
-  margin-left: 0.1%;
+  
 }
 .buy{
-  margin-left: 82.5%;
+
 }
 .logo {  
     width: 60%;   
@@ -99,8 +99,7 @@ body {
      position: absolute;
      font-family: Arial, Helvetica, sans-serif;
      color: #411f1f;
-     margin-left: 80%;
-    
+
 }
 .sell-button:hover{
     background-color: #1F8D16; /* Altera a cor de fundo ao passar o mouse */
@@ -143,14 +142,24 @@ body {
 }
 
 .carousel-item-svg rect {
-  fill: #105730; /* Define a cor de fundo do carrossel como verde claro */
+ 
 }
 
 /* Botões personalizados com fundo verde claro e texto branco */
 .btn.btn-lg.btn-primary[href="#"]:not(.dropdown-toggle) {
-  background-color: #407c5b;
-  border-color: #407c5b;
-  color: #FFFFFF;
+ /* Estilo de apresentação do botão */
+ padding: 10px 20px; /* Preenchimento do botão */
+ font-size: 18px; /* Tamanho da fonte */
+ cursor: pointer; /* Cursor do mouse ao passar sobre o botão */
+ outline: none; /* Remove o contorno ao focar no botão */
+ /* Estilo de fundo e borda do botão */
+ background-color:#1F8D16; /* Cor de fundo */
+ border: none; /* Remove a borda */
+ border-radius: 15px; /* Raio de borda arredondada */
+ box-shadow: 0 9px #411f1f; /* Sombra do botão */
+ align-self: center;
+ margin-left: 10%;
+ color: #411f1f;
 }
 
 /* Estilos de hover para os botões personalizados */
@@ -162,7 +171,7 @@ body {
 
 
 .nav-link.px-2.link-body-emphasis {
-  color: green !important;
+  color: rgb(240, 253, 240) !important;
 }
 
 footer.py-3 .nav-link.text-body-secondary {
@@ -246,11 +255,6 @@ footer.py-3 .text-body-secondary {
     background-color: #BBC49F;
 }
 
-body {
-   
-  }
-  
-  
   /* CUSTOMIZE THE CAROUSEL
   -------------------------------------------------- */
   
@@ -361,7 +365,7 @@ body {
 }
 
 .carousel-item-svg rect {
-  fill: #105730; /* Define a cor de fundo do carrossel como verde claro */
+ 
 }
 
 /* Botões personalizados com fundo verde claro e texto branco */
