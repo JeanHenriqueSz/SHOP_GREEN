@@ -23,10 +23,8 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     color: #1F8D16;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
-h3{
-  color: #411f1f;
-}
 .logo {  
     width: 60%;   
     height: 70%;
