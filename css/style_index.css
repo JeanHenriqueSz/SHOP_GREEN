@@ -9,7 +9,7 @@ body {
 .home-img{
 
     background-image: url(../img/background-home.png);
-    height: 800px;
+    height: 600px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
