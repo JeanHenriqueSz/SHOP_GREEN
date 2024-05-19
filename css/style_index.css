@@ -19,12 +19,14 @@ body {
   .home-text {
     text-align: center;
     position: absolute;
-    top: 50%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: 1F8D16;
+    color: #1F8D16;
   }
-
+h3{
+  color: #411f1f;
+}
 .logo {  
     width: 60%;   
     height: 70%;
@@ -169,10 +171,6 @@ footer.py-3 .text-body-secondary {
 .custom-search-input:focus {
   color: black; /* Mantém o texto preto quando o campo de busca está em foco */
   background-color: white !important;
-}
-
-.carousel-item-svg rect {
- 
 }
 
 /* Botões personalizados com fundo verde claro e texto branco */
@@ -392,10 +390,6 @@ footer.py-3 .text-body-secondary {
 .custom-search-input:focus {
   color: black; /* Mantém o texto preto quando o campo de busca está em foco */
   background-color: white !important;
-}
-
-.carousel-item-svg rect {
- 
 }
 
 /* Botões personalizados com fundo verde claro e texto branco */
