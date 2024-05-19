@@ -5,17 +5,31 @@ body {
     margin: 0;
     padding: 0;
 }
-.sell{
-  
-}
-.buy{
 
+.home-img{
+    background-image: url('../img/background-home.png');
+    background-color: #cccccc;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
 }
+.home-text{
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
 .logo {  
     width: 60%;   
     height: 70%;
     margin-left: 20%;
 } 
+
 .grid-container {
     display: grid;
     grid-template-columns: auto auto auto;
@@ -24,6 +38,7 @@ body {
   .grid-item {
     padding: 20px;
   }
+
 .explorar {  
     width: 10%;  
     height: 10%;
@@ -139,10 +154,6 @@ body {
 .custom-search-input:focus {
   color: black; /* Mantém o texto preto quando o campo de busca está em foco */
   background-color: white !important;
-}
-
-.carousel-item-svg rect {
- 
 }
 
 /* Botões personalizados com fundo verde claro e texto branco */
