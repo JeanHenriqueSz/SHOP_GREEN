@@ -26,16 +26,43 @@ body {
 }
 
 /* Estilo para os links no header */
-header a {
-    text-decoration: none; /* Remove o sublinhado */
-    color: black;
-    margin-right: 30px;
+
+/*ALTERAÇÃO*/
+
+body {
+    background-color: #FFFFFF;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.125rem;
+    margin: 0;
+    padding: 0;
 }
 
-header img {
-    height: 110px; /* Define a altura da imagem */
-    width: 110px; /* Define a largura da imagem */
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #BBC49F;
+    padding: 10px 20px;
 }
+
+.navigation .nav-link {
+    color: green;
+}
+
+.nav-link.px-2.link-body-emphasis {
+    color: green !important;
+}
+
+footer.py-3 .nav-link.text-body-secondary {
+    color: gray !important;
+}
+
+footer.py-3 .text-body-secondary {
+    color: gray !important;
+}
+
+
+/*ALTERAÇÃO FIM*/
 
 main {
     background-color: white; /* Define a cor de fundo do conteúdo principal */
