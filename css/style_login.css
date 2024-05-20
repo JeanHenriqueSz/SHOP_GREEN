@@ -1,7 +1,16 @@
 body {
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     margin: 0;
     padding: 0;
+}
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 h1 {
     text-align: center;
@@ -13,75 +22,61 @@ h1 {
 }
 .nav-link.px-2.link-body-emphasis {
     color: green !important;
-
 }
-
 .container {
-    align-self: center;
-    position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
     padding: 20px;
+    margin: 50px auto;
     width: 500px;
-    height: 500px;
-    background: linear-gradient(to right, #88ec66,#176a24);
+    background-color: #1B5E1F;
     border-radius: 38px;
-    margin-right: 90px; /* Adicionando uma margem à direita */
+    color: white;
 }
-.logo-facebook img{
+.logo-facebook img {
     margin-right: 20px;
     width: 20px; 
     height: auto; 
     position: relative;
 }
-.logo-google img{
+.logo-google img {
     margin-right: 60px;
     width: 20px; 
     height: auto; 
     position:relative;
     left: 100px;
 }
-
-#google{
+#google {
     position: relative;
     left: 50px;
     bottom: 2px;
     font-size: 15px;
-
 }
-
-#face{
+#face {
     position: relative;
     left: 295px;
     bottom: 21.5px;
     font-size: 15px;
 }
-
-#text-face{
+#text-face {
     position: relative;
     left: 280px;
     bottom: 26px;
 }
-#text-face span{
+#text-face span {
     font-size: 15px;
 }
 label {
     margin-bottom: .2rem;
     position: relative;
 }
-      
-label:not(:first-of-type){
+label:not(:first-of-type) {
     margin-top: 1rem;
 }
 .helper-text {
     display: none;
     font-size: .8rem;
     color: darkred;
-         
 }  
 input[type="text"],
-input[type="email"],
 input[type="password"] {
     width: 100%;
     padding: 10px;
@@ -95,15 +90,14 @@ input[type="submit"] {
     width: 100%;
     background-color: #618463;
     color: white;
-    padding: 14px 20px;
+    padding: 10px 20px;
     margin: 8px 0;
     border: none;
     border-radius: 4px;
-    cursor: pointer
-    
+    cursor: pointer;
 }
 input[type="submit"]:hover {
-    background-image: linear-gradient(to right,rgb(0, 92, 197), rgb(90, 20, 220));
+    background-image: linear-gradient(to right, rgb(0, 92, 197), rgb(90, 20, 220));
     width: 100%;
     border: none;
     padding: 15px;
@@ -111,22 +105,12 @@ input[type="submit"]:hover {
     font-size: 15px;
     cursor: pointer;
     border-radius: 10px;
-    
-}
-p a {
-    text-align: center;
-    margin-top: 15px;
-}
-
-a {
-    text-decoration: none;
-    color: #06509b;
 }
 .required-popup::after {
     content: "* Campo obrigatório";
     position: absolute;
-    top: 0; /* Ajuste a posição superior conforme necessário */
-    right: -400px; /* Ajuste a distância da borda direita */
+    top: 0;
+    right: -400px;
     color: #DFDFDF;
     font-size: 0.80rem;
     padding: 0.2rem 0.3rem;
@@ -134,41 +118,43 @@ a {
     display: block;
     background-color: #202020;
 }
-
 input.error {
-  border: solid 2px #992020;
-  background-color: #CCBBBB;
-  color: #662020;
+    border: solid 2px #992020;
+    background-color: #CCBBBB;
+    color: #662020;
 }
-
 input.correct {
-  background-color: #BBCCBB;
-  border: solid 2px #206620;
-  color: #206620;
+    background-color: #BBCCBB;
+    border: solid 2px #206620;
+    color: #206620;
 }
-
 .visible {
-  display: block;
+    display: block;
 }
 .clearfix::after {
     content: "";
     display: table;
     clear: both;
 }
-
 footer.py-3 .nav-link.text-body-secondary {
     color: gray !important;
 }
-  
 footer.py-3 .text-body-secondary {
     color: gray !important;
 }
 .footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
+    position: relative;
     width: 100%;
-    height: 20%;
-    color: white;
+    background-color: #f1f1f1;
+    color: #000;
     text-align: center;
+    padding: 10px 0;
+}
+.centered-links {
+    text-align: center;
+    margin-top: 15px;
+}
+.centered-links a {
+    margin: 0 10px;
+    color: #06509b;
 }
