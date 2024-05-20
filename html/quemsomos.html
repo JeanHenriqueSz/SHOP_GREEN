@@ -1,13 +1,96 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR" data-bs-theme="auto">
   <head><script src="../assets/js/color-modes.js"></script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QuemSomos</title>
-    <!-- Bootstrap CSS -->
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <title>Quem Somos</title>
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
-    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../css/style_quemsomos.css">
+
+<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        width: 100%;
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .btn-bd-primary {
+        --bd-violet-bg: #712cf9;
+        --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+        --bs-btn-font-weight: 600;
+        --bs-btn-color: var(--bs-white);
+        --bs-btn-bg: var(--bd-violet-bg);
+        --bs-btn-border-color: var(--bd-violet-bg);
+        --bs-btn-hover-color: var(--bs-white);
+        --bs-btn-hover-bg: #6528e0;
+        --bs-btn-hover-border-color: #6528e0;
+        --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+        --bs-btn-active-color: var(--bs-btn-hover-color);
+        --bs-btn-active-bg: #5a23c8;
+        --bs-btn-active-border-color: #5a23c8;
+      }
+
+      .bd-mode-toggle {
+        z-index: 1500;
+      }
+
+      .bd-mode-toggle .dropdown-menu .active .bi {
+        display: block !important;
+      }
+    </style>
+    <link rel="stylesheet" href="/2 backup/style_quemsomos.css">
+    
   </head>
   <body>
     <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
@@ -25,6 +108,7 @@
         <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
       </symbol>
     </svg>
+
     <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
       <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center"
               id="bd-theme"
@@ -62,12 +146,13 @@
 
 <header data-bs-theme="dark">
 </header>
+
 <header class="p-3 mb-3 border-bottom">
     <div class="container">
       <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
         <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 link-body-emphasis text-decoration-none">
             <div class="logo">
-                <a href="../index.html" ><img src="../img/logo.png" width="100" height="100" alt="logo"></a>
+                <img src="/img/logo.png" width="200" height="200" alt="">
             </div>
         </a>
 
@@ -77,7 +162,7 @@
           <li><a href="../html/quemsomos.html" class="nav-link px-2 link-body-emphasis">Quem Somos</a>
           <li><a href="../html/cadastro.html" class="nav-link px-2 link-body-emphasis">Cadastro</a>
           <li><a href="../html/login.html" class="nav-link px-2 link-body-emphasis">Login</a>
-          <li><a href="../html/carrinhodecompras.html" class="nav-link px-2 link-body-emphasis">Carrinho de Compras</a></li>    
+          <li><a href="../html/carrinhodecompras.html" class="nav-link px-2 link-body-emphasis">Carrinho de Compras</a></li> 
         </ul>
 
         <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3 custom-search-form" role="search">
@@ -86,17 +171,20 @@
 
         <div class="dropdown text-end">
           <a href="#" class="d-block link-body-emphasis text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-            <img src="../img/LUPA.png" alt="mdo" width="32" height="32" class="rounded-circle">
+            <img src="/img/lupa.png" width="40" height="40" alt="">
+            <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
           </a>
           <ul class="dropdown-menu text-small">
             <li><a class="dropdown-item" href="../html/carrinhodecompras.html">Meu Carrinho</a></li>
+            <li><a class="dropdown-item" href="../html/login.html">Perfil</a></li>
             <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="../html/login.html">Login</a></li>
+            <li><a class="dropdown-item" href="../index.html">Sign out</a></li>
           </ul>
         </div>
       </div>
     </div>
   </header>
+
   <div class="content">
     <div class="titles">
         <h2>Aprenda tudo sobre nossa plataforma</h2>
@@ -112,13 +200,17 @@
                 <div class="container">
                     <div class="carousel-caption text-justify">
                         <p class="opacity-75">Somos uma Plataforma de Consumo e descarte Responsável, estamos comprometidos em promover um mundo mais sustentável através do incentivo ao consumo, produção e descarte responsáveis. Nossa missão é fornecer uma plataforma acessível e informativa que capacite os consumidores a fazerem escolhas conscientes e alinhadas com seus valores ambientais e sociais. Além de possibilitar ganhos com o descarte correto de seus materiais para promover a sustentabilidade nas cadeias de suprimentos, acreditamos que cada ação individual pode contribuir para a construção de um futuro mais sustentável para todos.</p>
-                        <p><a class="btn btn-lg btn-primary" href="#">Vamos Começar</a></p>
+                        <p><a class="btn btn-lg btn-primary" href="../html/quemsomos.html">Vamos Começar</a></p>
                     </div>
                 </div>
             </div>
             <div class="carousel-item">
                 <svg class="bd-placeholder-img carousel-item-svg" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#BBE7CF"/></svg>
                 <div class="container d-flex align-items-center"> <!-- Adicionando a classe d-flex e align-items-center -->
+                    <div class="carousel-caption text-justify">
+                        <p>Baseamos nossa abordagem em pesquisas e dados públicos que destacam a urgência da transição para práticas de consumo mais sustentáveis. Os dados revelam os impactos significativos do consumo desenfreado e da produção não sustentável no meio ambiente, na saúde humana e no bem-estar social.</p>
+                        <p><a class="btn btn-lg btn-primary" href="../html/quemsomos.html">Como Funciona</a></p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -132,6 +224,9 @@
         </button>
     </div>
 </div>
+
+
+
 <div class="container">
     <footer class="py-3 my-4">
         <ul class="nav justify-content-center border-bottom pb-3 mb-3">
@@ -145,5 +240,6 @@
       </footer>
 </div>
 <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
     </body>
 </html>
