@@ -85,77 +85,70 @@ window.addEventListener("scroll", function () {
 //objeto literal dos produtos que o site possui
 const products = {
   0: {
-    nome: 'Apple Iphone 11',
-    desc: 'Muito Utilizado em tecnologias avançadas..',
-    valor: 3320.0,
-    img: '<img src="assets/img/projects/iphone.png">',
+    nome: 'KIT 3 CX. DE COTONETE COM HASTES DE PAPEL',
+    desc: '..',
+    valor: 25.90,
+    img: '<img src="#">',
     qtd: 1
   },
 
   1: {
-    nome: "Controle Xbox",
-    desc: "Muito Utilizado em tecnologias avançadas..",
-    valor: 290.0,
-    img: '<img src="assets/img/projects/console.png">',
+    nome: "ECOBAG PRETA: EU NÃO SOU DE JOGAR FORA",
+    desc: "..",
+    valor: 29.90,
+    img: '<img src="#">',
     qtd: 1
   },
 
   2: {
-    nome: "Headset Gamer",
-    desc: "Muito Utilizado em tecnologias avançadas..",
-    valor: 349.99,
-    img: '<img src="assets/img/projects/headphone1.png">',
+    nome: "KIT COPOS + TALHERES + PRATOS DE PAPEL",
+    desc: "..",
+    valor: 35.90,
+    img: '<img src="#">',
     qtd: 1
   },
 
   3: {
-    nome: "Air Jordan",
-    desc: "Muito Utilizado em tecnologias avançadas..",
-    valor: 329.99,
-    img: '<img src="assets/img/projects/nike-jordan.png">',
+    nome: "ECOBAG BRANCA: EU CUIDO DO OCEANO",
+    desc: "..",
+    valor: 29.90,
+    img: '<img src="#">',
     qtd: 1
   },
 
   4: {
-    nome: "Xiaomi Mi Band",
-    desc: "Muito Utilizado em tecnologias avançadas..",
-    valor: 169.99,
-    img: '<img src="assets/img/projects/relógio.png">',
+    nome: "KIT DE CANUDO INOX: SAQUINHO + CANUDO RETO + ESCOVA DE LIMPAR",
+    desc: "..",
+    valor: 19.90,
+    img: '<img src="#">',
     qtd: 1
   },
 
   5: {
-    nome: "Nutriwhey",
-    desc: "Muito Utilizado em tecnologias avançadas..",
-    valor: 48.49,
-    img: '<img src="assets/img/projects/whey.png">',
+    nome: "KIT LAVA LOUÇA : BUCHA VEGETAL E LAVA LOUÇAS EM BARRA",
+    desc: "..",
+    valor: 17.90,
+    img: '<img src="#">',
     qtd: 1
   },
 
   6: {
-    nome: "Slant Summer",
-    desc: "Muito Utilizado em tecnologias avançadas..",
-    valor: 131.19,
-    img: '<img src="assets/img/projects/tenis-masc.png">',
+    nome: "KIT DE CANUDO INOX: SAQUINHO + CANUDO RETO + ESCOVA DE LIMPAR,
+    desc: "..",
+    valor: 19.90,
+    img: '<img src="#">',
     qtd: 1
   },
 
   7: {
-    nome: "Philco Smart TV",
+    nome: "SAQUINHOS DE PAPEL PARA COLETAR FEZES DO PET",
     desc: "Muito Utilizado em tecnologias avançadas..",
-    valor: 1399.00,
-    img: '<img src="assets/img/projects/Philco-Tv.png">',
+    valor: 10.90,
+    img: '<img src="#">',
     qtd: 1
   },
 
-  8: {
-    nome: "Alexa Echo Dot",
-    desc: "Muito Utilizado em tecnologias avançadas..",
-    valor: 379.05,
-    img: '<img src="assets/img/projects/alexa.png">',
-    qtd: 1
-  },
-  // PRODUTOS DA PAGINA DE PRODUTOS, COMEÇANDO DO 20
+  // PRODUTOS DA PAGINA DE VENDA, COMEÇANDO DO 20
   20: {
     nome: "Notebook HP",
     desc: "Muito Utilizado em tecnologias avançadas..",
