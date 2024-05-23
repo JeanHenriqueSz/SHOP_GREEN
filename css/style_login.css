@@ -11,6 +11,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 h1 {
     text-align: center;
@@ -23,7 +24,7 @@ h1 {
 .nav-link.px-2.link-body-emphasis {
     color: green !important;
 }
-.container {
+.container-2 {
     padding: 20px;
     margin: 50px auto;
     width: 500px;
@@ -41,7 +42,7 @@ h1 {
     margin-right: 60px;
     width: 20px; 
     height: auto; 
-    position:relative;
+    position: relative;
     left: 100px;
 }
 #google {
@@ -98,12 +99,9 @@ input[type="submit"] {
 }
 input[type="submit"]:hover {
     background-image: linear-gradient(to right, rgb(0, 92, 197), rgb(90, 20, 220));
-    width: 100%;
     border: none;
     padding: 15px;
-    color: white;
     font-size: 15px;
-    cursor: pointer;
     border-radius: 10px;
 }
 .required-popup::after {
@@ -131,30 +129,9 @@ input.correct {
 .visible {
     display: block;
 }
-.clearfix::after {
-    content: "";
-    display: table;
-    clear: both;
-}
-footer.py-3 .nav-link.text-body-secondary {
-    color: gray !important;
-}
-footer.py-3 .text-body-secondary {
-    color: gray !important;
-}
-.footer {
-    position: relative;
-    width: 100%;
-    background-color: #f1f1f1;
-    color: #000;
-    text-align: center;
-    padding: 10px 0;
-}
 .centered-links {
     text-align: center;
-    margin-top: 15px;
 }
 .centered-links a {
-    margin: 0 10px;
-    color: #06509b;
+    color: rgb(241, 241, 245);
 }
