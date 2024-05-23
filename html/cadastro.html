@@ -5,35 +5,159 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
     <link rel="stylesheet" href="../css/style_cadastro.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    
 </head>
 <body>
-    <div class="container">
-        
-        <h1>Criar nova conta</h1>
-        <div class="logo-container">
-            <img src="../img/google.png" alt="Google Icon" width="20" height="20">
-            <a href="#"><span><b id="google">Google</b></span></a>
-        </div>
+    
 
-        <div class="logo-facebook">
-            <img id="face" src="../img/facebook.png" alt="Google Icon" width="20" height="20">
-            <a href="#"><span><b id="text-face">Facebook</b></span></a>
+    </div>
+    <div class="header"></div>
+
+    <div class="navbar-container">
+        <div class="navbar">
+            <div class="left">
+                <img src="logo.png" alt="Logo">
+                <a href="#">Home</a>
+                <a href="#">Explorar</a>
+                <a href="#">Quem Somos</a>
+            </div>
+
+
+            <div class="search-container">
+                <input type="text" placeholder="Search...">
+                <a href="#"><img src="LUPA.png" alt="Search"></a>
+            </div>
         </div>
-        <form>
+    </div>
+
+    <div class="container">
+        <h1>Criar nova conta</h1>
+        <form id="signup-form">
             <div class="form-group">
                 <label for="username">Crie seu username</label>
                 <input type="text" id="username" name="username" required>
+                <div id="username-helper" class="error-message"></div>
             </div>
             <div class="form-group">
                 <label for="email">Digite seu melhor email</label>
                 <input type="email" id="email" name="email" required>
+                <div id="email-helper" class="error-message"></div>
             </div>
             <div class="form-group">
                 <label for="password">Crie sua senha</label>
                 <input type="password" id="password" name="password" required>
+                <div id="password-helper" class="error-message"></div>
             </div>
-            <button type="submit">Sign up</button>
+            <button type="submit">Criar conta</button>
         </form>
     </div>
+
+    <div class="footer">
+        <div class="footer-links">
+            <a href="#">Cadastro</a>
+            <a href="#">Carrinho de Compras</a>
+            <a href="#">Explorar</a>
+            <a href="#">Login</a>
+            <a href="#">Quem Somos</a>
+        </div>
+        <div class="copyright">
+            &copy; 2024 Company, Inc
+        </div>
+    </div>
+
+    <script>
+
+        const form = document.getElementById('signup-form');
+        const usernameInput = document.getElementById("username");
+        const usernameLabel = document.querySelector('label[for="username"]');
+        const usernameHelper = document.getElementById("username-helper");
+        const passwordInput = document.getElementById("password"); 
+        const passwordLabel = document.querySelector('label[for="password"]');
+        const passwordHelper = document.getElementById("password-helper");
+
+        usernameInput.addEventListener("focus", function(){
+            usernameLabel.classList.add("required-popup");
+        });
+
+        usernameInput.addEventListener("blur", function(){
+            usernameLabel.classList.remove("required-popup");
+        });
+
+        usernameInput.addEventListener("input", function(e){
+            let valor = e.target.value;
+            if(valor.length < 3){
+                usernameInput.classList.add("error");
+                usernameHelper.classList.add("visible");
+                usernameHelper.innerText = "O nome de usuário deve ter no mínimo 3 caracteres";
+                usernameInput.classList.remove("correct");
+            }else{
+                usernameInput.classList.remove("error");
+                usernameInput.classList.add("correct");
+                usernameHelper.classList.remove("visible");
+            }
+        });
+
+        passwordInput.addEventListener("focus", function(){
+            passwordLabel.classList.add("required-popup");
+        });
+
+        passwordInput.addEventListener("blur", function(){
+            passwordLabel.classList.remove("required-popup");
+        });
+
+        passwordInput.addEventListener("input", function(e){
+            let valor = e.target.value;
+            if(valor.length < 6){
+                passwordInput.classList.add("error");
+                passwordHelper.classList.add("visible");
+                passwordHelper.innerText = "A senha deve ter no mínimo 6 caracteres!";
+                passwordInput.classList.remove("correct");
+            } else {
+                passwordInput.classList.remove("error");
+                passwordHelper.classList.remove("visible");
+                passwordInput.classList.add("correct");
+            }
+        });
+
+        form.addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            const username = usernameInput.value.trim();
+            const password = passwordInput.value.trim();
+
+            let isValid = true;
+
+            if (username.length < 3) {
+                usernameInput.classList.add("error");
+                usernameHelper.classList.add("visible");
+                usernameHelper.innerText = "O nome de usuário deve ter no mínimo 3 caracteres";
+                isValid = false;
+            } else {
+                usernameInput.classList.remove("error");
+                usernameHelper.classList.remove("visible");
+            }
+
+            if (password.length < 6) {
+                passwordInput.classList.add("error");
+                passwordHelper.classList.add("visible");
+                passwordHelper.innerText = "A senha deve ter no mínimo 6 caracteres!";
+                isValid = false;
+            } else {
+                passwordInput.classList.remove("error");
+                passwordHelper.classList.remove("visible");
+            }
+
+            if (isValid) {
+                form.submit();
+            }
+
+            
+            
+        });
+    </script>
 </body>
 </html>
