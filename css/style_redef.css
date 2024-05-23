@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 60%;
+    height: 70%;
+    margin-left: 20%;
+}
+
+.nav-link.px-2.link-body-emphasis {
+    color: green !important;
+}
+
+.container-2 {
+    padding: 20px;
+    margin: 50px auto;
+    width: 500px;
+    background-color: #1B5E1F;
+    border-radius: 38px;
+    color: white;
+}
+
+h2 {
+    text-align: center;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #618463;
+    color: #fff;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-image: linear-gradient(to right, rgb(0, 92, 197), rgb(90, 20, 220));
+    border: none;
+    padding: 15px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+footer.py-3 .nav-link.text-body-secondary,
+footer.py-3 .text-body-secondary {
+    color: gray !important;
+}
+
+.footer {
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
