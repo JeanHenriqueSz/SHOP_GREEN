@@ -1,108 +1,112 @@
 body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #BBC49F;
+    padding: 0;
 }
-.logo{
-    position: absolute; /* Posição absoluta para que a imagem possa ser posicionada */
-    top: 0px; /* Distância do topo */
-    left: 0px; /* Distância da esquerda */
-    width: 350px; /* Largura da imagem */
-    height: auto; /* Altura automática para manter a proporção */
-   
-}
-.container {
-    width: 629px;
-    height: 672px;
-    margin: 142px auto;
-    padding: 30px;
-    background-color: #1B5E1F;
-    border-radius: 38px;
-    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
-}
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
+}
 h1 {
     text-align: center;
-    font-size: 45px;
 }
-
-.form-group {
-    margin-bottom: 20px;
+.logo {  
+    width: 60%;   
+    height: 70%;
+    margin-left: 20%;
 }
-
+.nav-link.px-2.link-body-emphasis {
+    color: green !important;
+}
+.container-2 {
+    padding: 20px;
+    margin: 50px auto;
+    width: 500px;
+    background-color: #1B5E1F;
+    border-radius: 38px;
+    color: white;
+}
+.logo-facebook img {
+    margin-right: 20px;
+    width: 20px; 
+    height: auto; 
+    position: relative;
+}
+.logo-google img {
+    margin-right: 60px;
+    width: 20px; 
+    height: auto; 
+    position: relative;
+    left: 100px;
+}
 label {
-    display: block;
-    margin-bottom: 5px;
+    margin-bottom: .2rem;
+    position: relative;
 }
-
+label:not(:first-of-type) {
+    margin-top: 1rem;
+}
+.helper-text {
+    display: none;
+    font-size: .8rem;
+    color: darkred;
+}  
 input[type="text"],
 input[type="email"],
 input[type="password"] {
     width: 100%;
     padding: 10px;
+    margin: 8px 0;
+    display: inline-block;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 4px;
+    box-sizing: border-box;
 }
-
-button {
+input[type="submit"] {
     width: 100%;
-    padding: 15px;
-    background-color: #007bff;
-    color: #fff;
+    background-color: #618463;
+    color: white;
+    padding: 10px 20px;
+    margin: 8px 0;
     border: none;
-    border-radius: 5px;
+    border-radius: 4px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
 }
-
-button:hover {
-    background-color: #0056b3;
-}
-
-.logo-container  {
-    display: flex;
-    align-items: center;
-}
-
-.logo-facebook img{
-    margin-right: 10px;
-    width: 20px; /* ajuste conforme necessário */
-    height: auto; 
-    position: relative;
-    left: 200px;
-}
-
-.logo-container img {
-    margin-right: 10px;
-    width: 20px; 
-    height: auto; 
-    position: relative;
-    left: 160px;
-}
-
-.logo-container span {
-    font-size: 24px; /* ajuste conforme necessário */
-}
-
-#google{
-    position: relative;
-    left: 160px;
-    bottom: 2px;
-    font-size: 15px; 
-
-}
-
-#face{
-    position: relative;
-    left: 395px;
-    bottom: 21.5px;
+input[type="submit"]:hover {
+    background-image: linear-gradient(to right, rgb(0, 92, 197), rgb(90, 20, 220));
+    border: none;
+    padding: 15px;
     font-size: 15px;
+    border-radius: 10px;
 }
-
-#text-face{
-    position: relative;
-    left: 386px;
-    
-    bottom: 25px;
-    font-size: 15px;
+.required-popup::after {
+    content: "* Campo obrigatório";
+    position: absolute;
+    top: 0;
+    right: -300px;
+    color: #DFDFDF;
+    font-size: 0.80rem;
+    padding: 0.2rem 0.3rem;
+    width: auto;
+    display: block;
+    background-color: #202020;
+}
+input.error {
+    border: solid 2px #992020;
+    background-color: #CCBBBB;
+    color: #662020;
+}
+input.correct {
+    background-color: #BBCCBB;
+    border: solid 2px #206620;
+    color: #206620;
+}
+.visible {
+    display: block;
 }

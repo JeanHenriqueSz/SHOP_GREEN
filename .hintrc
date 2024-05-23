@@ -8,6 +8,12 @@
       {
         "image-alt": "off"
       }
+    ],
+    "axe/aria": [
+      "default",
+      {
+        "aria-roles": "off"
+      }
     ]
   },
   "browserslist": [
