@@ -10,8 +10,19 @@
 <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
    <!-- Script Js -->
 <script src="../script/scriptExplorar.js" ></script>
+ <!------ LINK FONTAWESOME ------->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+ integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+ crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!----- LINK SLICK JS ------>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+<!--icon Dark-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.0/font/bootstrap-icons.css" />
+<script src="assets/js/index.js" defer></script>
 </head>
 <body>
+  
+  <!------ MENU ------->
   <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
     <symbol id="check2" viewBox="0 0 16 16">
       <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
@@ -27,6 +38,7 @@
       <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
     </symbol>
   </svg>
+
   <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
     <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center"
             id="bd-theme"
@@ -69,15 +81,29 @@
     <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
       <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 link-body-emphasis text-decoration-none">
           <div class="logo">
-              <img src="../img/logo.png" width="100" height="100" alt="">
+              <a href="../index.html" ><img src="../img/logo.png" width="100" height="100" alt="logo"></a>
           </div>
       </a>
-
-      <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+ <!-- MENU RESPONSIVO -->
+ <ul class='list menuMobile nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0' id="menuMobile" role="menuMobile">
         <li><a href="../index.html" class="nav-link px-2 link-body-emphasis">Home</a></li>
         <li><a href="../html/explorar.html" class="nav-link px-2 link-body-emphasis">Explorar</a></li>
-        <li><a href="../html/quemsomos.html" class="nav-link px-2 link-body-emphasis">Quem Somos</a>
+        <li><a href="../html/quemsomos.html" class="nav-link px-2 link-body-emphasis">Quem Somos</a></li> 
       </ul>
+      <div class="configs-menu">
+        <!---- SCROLL ABRE FECHA CARRINHO ---->
+        <div class="config">
+          <a>
+            <i class="fas fa-shopping-bag" id="cart-btn"></i>
+            <!-- Total de itens na sacolinha do carrinho -->
+            <p id="cont-itens-carrinho" class="sacolinhaDark"></p>
+          </a>
+        </div>
+
+        <!--ABERTURA DA DIV SISTEMA DE CARRINHO -->
+        <div class="cardCarrinho-container" id="meuCarrinho">
+
+          <section class="box-cart">
 
       <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3 custom-search-form" role="search">
         <input type="search" class="form-control custom-search-input" placeholder="Search..." aria-label="Search">
@@ -85,23 +111,23 @@
 
       <div class="dropdown text-end">
         <a href="#" class="d-block link-body-emphasis text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-          <img src="../img/LUPA.png" alt="mdo" width="32" height="32" class="rounded-circle">
+          <img src="../img/LUPA.png" width="32" height="32" alt="">
         </a>
         <ul class="dropdown-menu text-small">
           <li><a class="dropdown-item" href="../html/carrinhodecompras.html">Meu Carrinho</a></li>
-          <li><hr class="dropdown-divider"></li>
           <li><a class="dropdown-item" href="../html/login.html">Login</a></li>
         </ul>
       </div>
     </div>
   </div>
-</header>
+  </header>
 <div class="content">
   <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
       <div class="carousel-indicators">
           <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
       </div>
+       <!-------- BANNER INICIAL -------->
       <div class="carousel-inner">
           <div class="carousel-item active">
               <svg class="bd-placeholder-img carousel-item-svg" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#BBE7CF"/></svg>
@@ -132,6 +158,152 @@
       </button>
   </div>
 </div>
+      <!----------- CATALOGUE ---------->
+      <section class="catalogue-initial">
+        <ul class="box-catalogue">
+          <li>
+            <figure>
+              <img src="../img/cotonetehastesdepapel.png" alt="Cotonetepapel">
+            </figure>
+            <figcaption>
+              <div>
+                <h1>KIT 3 CX. DE COTONETE COM HASTES DE PAPEL </h1>
+                <h4>R$ R$ 25,90</h4>
+              </div>
+    
+              <section>
+                <i data-produtoid="20" class="fas fa-shopping-cart btnFinalizarCarrinho"></i>
+                <i class="fas fa-heart"></i>
+                </div>
+              </section>
+            </figcaption>
+          </li>
+    
+          <li>
+            <figure>
+              <img src="../img/ecobagpreta.png" alt="EcoBag">
+            </figure>
+            <figcaption>
+              <div>
+                <h1>ECOBAG PRETA: EU NÃO SOU DE JOGAR FORA
+                </h1>
+                <h4>R$ R$ 29,90</h4>
+              </div>
+    
+              <section>
+                <i data-produtoid="20" class="fas fa-shopping-cart"></i>
+                <i class="fas fa-heart"></i>
+                </div>
+              </section>
+            </figcaption>
+          </li>
+
+          <li>
+            <figure>
+              <img src="../img/kitfesta-papel.png" alt="KitFesta">
+            </figure>
+            <figcaption>
+              <div>
+                <h1>KIT COPOS + TALHERES + PRATOS DE PAPEL</h1>
+                <h4>R$ R$ 35,90</h4>
+              </div>
+    
+              <section>
+                <i data-produtoid="20" class="fas fa-shopping-cart"></i>
+                <i class="fas fa-heart"></i>
+                </div>
+              </section>
+            </figcaption>
+          </li>
+          <li>
+            <figure>
+              <img src="../img/ecobagbranca.png" alt="EcoBag">
+            </figure>
+            <figcaption>
+              <div>
+                <h1>ECOBAG DE ALGODÃO CRU EU CUIDO DO OCEANO
+                </h1>
+                <h4>R$ R$ 29,90</h4>
+              </div>
+    
+              <section>
+                <i data-produtoid="20" class="fas fa-shopping-cart"></i>
+                <i class="fas fa-heart"></i>
+                </div>
+              </section>
+            </figcaption>
+          </li>
+          <li>
+            <figure>
+              <img src="../img/kitcanudo3R.png" alt="KitCanudoInox">
+            </figure>
+            <figcaption>
+              <div>
+                <h1>KIT DE CANUDO INOX: SAQUINHO + CANUDO RETO + ESCOVA DE LIMPAR</h1>
+                <h4>R$ R$ 19,90</h4>
+              </div>
+    
+              <section>
+                <i data-produtoid="20" class="fas fa-shopping-cart"></i>
+                <i class="fas fa-heart"></i>
+                </div>
+              </section>
+            </figcaption>
+          </li>
+          <li>
+            <figure>
+              <img src="../img/kitlavalouças.png" alt="KitLavaLouça">
+            </figure>
+            <figcaption>
+              <div>
+                <h1>KIT LAVA LOUÇA : BUCHA VEGETAL E LAVA LOUÇAS EM BARRA</h1>
+                <h4>R$ R$ 17,90</h4>
+              </div>
+    
+              <section>
+                <i data-produtoid="20" class="fas fa-shopping-cart"></i>
+                <i class="fas fa-heart"></i>
+                </div>
+              </section>
+            </figcaption>
+          </li>
+          <li>
+            <figure>
+              <img src="../img/kitcanudocan-u-do.png" alt="KitCanudoInox">
+            </figure>
+            <figcaption>
+              <div>
+                <h1>KIT DE CANUDO INOX: SAQUINHO + CANUDO RETO + ESCOVA DE LIMPAR</h1>
+                <h4>R$ R$ 19,90</h4>
+              </div>
+    
+              <section>
+                <i data-produtoid="20" class="fas fa-shopping-cart"></i>
+                <i class="fas fa-heart"></i>
+                </div>
+              </section>
+            </figcaption>
+          </li>
+          <li>
+            <figure>
+              <img src="../img/saquinhopcaca.png" alt="catacaca">
+            </figure>
+            <figcaption>
+              <div>
+                <h1>SAQUINHOS DE PAPEL PARA COLETAR FEZES DO PET</h1>
+                <h4>R$ R$ 10,90</h4>
+              </div>
+    
+              <section>
+                <i data-produtoid="20" class="fas fa-shopping-cart"></i>
+                <i class="fas fa-heart"></i>
+                </div>
+              </section>
+            </figcaption>
+          </li>
+
+      </section>
+    
   <div class="container">
     <footer class="py-3 my-4">
       <ul class="nav justify-content-center border-bottom pb-3 mb-3">
@@ -142,6 +314,21 @@
         <p class="text-center text-body-secondary">&copy; 2024 Company, Ltda.</p>
       </footer>
 </div>
+  <!-------------- SCRIPT SLICK JS ------------------->
+  <script src="assets/js/scriptCarrinho.js"></script>
+  <script src="assets/js/menuMobile.js"></script>
+
+  <!-- SWEETALERT PERSONALIZADO -->
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+  <!------ SCRIPT INDEX JS ------->
 <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
     </body>
 </html>
