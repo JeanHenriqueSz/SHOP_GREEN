@@ -148,66 +148,6 @@ const products = {
     qtd: 1
   },
 
-  // PRODUTOS DA PAGINA DE VENDA, COMEÇANDO DO 20
-  20: {
-    nome: "Notebook HP",
-    desc: "Muito Utilizado em tecnologias avançadas..",
-    valor: 3149.10,
-    img: '<img src="assets/img/pag-produtos/Notebook.png">',
-    qtd: 1
-  },
-  21: {
-    nome: "playstation-5",
-    desc: "Muito Utilizado em tecnologias avançadas..",
-    valor: 3998.90,
-    img: '<img src="assets/img/pag-produtos/playstation-5_qjz1.png">',
-    qtd: 1
-  },
-  22: {
-    nome: "Pc Gamer Computador",
-    desc: "Muito Utilizado em tecnologias avançadas..",
-    valor: 2472.96,
-    img: '<img src="assets/img/pag-produtos/Pc-Gamer-Computador-PNG.png">',
-    qtd: 1
-  },
-  23: {
-    nome: "Camera de Segurança",
-    desc: "Muito Utilizado em tecnologias avançadas..",
-    valor: 832.05,
-    img: '<img src="assets/img/pag-produtos/Camera-De-Segurança.png">',
-    qtd: 1
-  },
-  24: {
-    nome: "Drone DJI FPV",
-    desc: "Muito Utilizado em tecnologias avançadas..",
-    valor: 1057.00,
-    img: '<img src="assets/img/pag-produtos/Drone.png">',
-    qtd: 1
-  },
-  25: {
-    nome: "SMARTPHONE GAMER",
-    desc: "Muito Utilizado em tecnologias avançadas..",
-    valor: 9719.19,
-    img: '<img src="assets/img/pag-produtos/smartphone-mobile.png">',
-    qtd: 1
-  },
-  26: {
-    nome: "Carregador Veicular",
-    desc: "Muito Utilizado em tecnologias avançadas..",
-    valor: 8307.31,
-    img: '<img src="assets/img/pag-produtos/Carregador_Veicular.png">',
-    qtd: 1
-  },
-  27: {
-    nome: "Robô Aspirador de Pó",
-    desc: "Muito Utilizado em tecnologias avançadas..",
-    valor: 599.00,
-    img: '<img src="assets/img/pag-produtos/robot_unee_side_1.png">',
-    qtd: 1
-  },
-
-}
-
 //gera o objeto do id clicado no site
 class Product {
   constructor(id) {
