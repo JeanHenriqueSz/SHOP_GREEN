@@ -30,15 +30,15 @@ document.addEventListener("DOMContentLoaded", function() {
   // Delegação de eventos para os botões de mais e menos
   tabelaProdutos.addEventListener('click', function(event) {
     const target = event.target;
-    if (target.classList.contains('botaoMais') || target.classList.contains('botaoMenos')) {
+    if (target.closest('.botaoMais') || target.closest('.botaoMenos')) {
       // Encontrando a linha e os elementos relevantes
       const row = target.closest('tr');
       const quantidadeText = row.querySelector('.quantidade-text');
       let quantidade = parseInt(quantidadeText.textContent);
 
-      if (target.classList.contains('botaoMais')) {
+      if (target.closest('.botaoMais')) {
         quantidade++;
-      } else if (target.classList.contains('botaoMenos')) {
+      } else if (target.closest('.botaoMenos')) {
         quantidade = Math.max(0, quantidade - 1);
       }
 
@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function() {
   // Delegação de eventos para o botão de remover
   tabelaProdutos.addEventListener('click', function(event) {
     const target = event.target;
-    if (target.classList.contains('remover')) {
+    if (target.closest('.remover')) {
       // Removendo o elemento pai (a linha da tabela)
       target.closest('tr').remove();
 
