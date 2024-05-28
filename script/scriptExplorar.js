@@ -21,17 +21,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-document.addEventListener('DOMContentLoaded', () => {
-    // Função para adicionar item ao carrinho
-    function adicionarAoCarrinho(produtoNome) {
-        // Aqui você pode adicionar o código para adicionar o produto ao carrinho
-        // Simulando a adição do produto ao carrinho
-        console.log(`Produto ${produtoNome} adicionado ao carrinho`);
-
-        // Exibindo um alerta de sucesso
-        alert(`Produto ${produtoNome} foi adicionado ao carrinho`);
-    }
-
     // Função para adicionar item aos favoritos
     function adicionarAosFavoritos() {
         // Exibindo um alerta de sucesso
