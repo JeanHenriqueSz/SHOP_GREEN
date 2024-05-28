@@ -45,4 +45,4 @@ document.addEventListener('DOMContentLoaded', () => {
     iconesFavoritos.forEach((icone) => {
         icone.addEventListener('click', adicionarAosFavoritos);
     });
-});
+    
